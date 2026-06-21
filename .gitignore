@@ -1,0 +1,15 @@
+# Raw source PDFs (large binaries — regenerate graph from graphify-out/graph.json)
+raw/
+
+# Generated HTML visualization (rebuild with: graphify export html)
+graphify-out/graph.html
+
+# Extraction cache (derived from raw PDFs — regenerated automatically by graphify)
+graphify-out/cache/
+
+# graphify temp/intermediate files
+graphify-out/.graphify_*
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
