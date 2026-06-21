@@ -1,0 +1,547 @@
+{
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/CLAUDE.md": {
+    "mtime": 1781478178.133004,
+    "ast_hash": "6971cffaa1fd4f0bc8c007c3368d9644",
+    "semantic_hash": "6971cffaa1fd4f0bc8c007c3368d9644"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Active-Badge.md": {
+    "mtime": 1781400746.1987827,
+    "ast_hash": "a3ba86bd5e9f4062e2bcfc6e29c0aa9e",
+    "semantic_hash": "a3ba86bd5e9f4062e2bcfc6e29c0aa9e"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/CSI-Indoor-Localization.md": {
+    "mtime": 1781492691.921901,
+    "ast_hash": "9b41180eb0badb8a3757019702ad483b",
+    "semantic_hash": "9b41180eb0badb8a3757019702ad483b"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Context-Aware-Computing.md": {
+    "mtime": 1781400605.1687438,
+    "ast_hash": "7e358b3283dc6aa8446108701351ca32",
+    "semantic_hash": "7e358b3283dc6aa8446108701351ca32"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Cricket-Location-Support-System.md": {
+    "mtime": 1781416288.6053667,
+    "ast_hash": "84e54ffece5c20b064db619fd4f97910",
+    "semantic_hash": "84e54ffece5c20b064db619fd4f97910"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/E-eyes-Device-Free-Localization.md": {
+    "mtime": 1781417041.7837453,
+    "ast_hash": "20140aecd9100b305e738c53adbabcaf",
+    "semantic_hash": "20140aecd9100b305e738c53adbabcaf"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/EZ-Indoor-Localization.md": {
+    "mtime": 1781478790.2734876,
+    "ast_hash": "4a80bde7d78369f631cae48ecc19056a",
+    "semantic_hash": "4a80bde7d78369f631cae48ecc19056a"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Horus-WLAN-System.md": {
+    "mtime": 1781401302.8218186,
+    "ast_hash": "bd57a8b7aae772ea4472aacb9b445903",
+    "semantic_hash": "bd57a8b7aae772ea4472aacb9b445903"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Indoor-IPS-Datasets.md": {
+    "mtime": 1781478686.0902815,
+    "ast_hash": "f535f0237aa4b2d6ed0c0408c76c76b1",
+    "semantic_hash": "f535f0237aa4b2d6ed0c0408c76c76b1"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Indoor-Localization-Applications-by-Sector.md": {
+    "mtime": 1781491941.141385,
+    "ast_hash": "8174257a7949eb37e1f1534234b0f064",
+    "semantic_hash": "8174257a7949eb37e1f1534234b0f064"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Indoor-Localization-ML-Methods.md": {
+    "mtime": 1781492724.0993426,
+    "ast_hash": "b86b5d64196169f8a310493e841ad348",
+    "semantic_hash": "b86b5d64196169f8a310493e841ad348"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Indoor-Location-Sensor-Technologies.md": {
+    "mtime": 1781491959.0078022,
+    "ast_hash": "78c49fff1c44e9114d6de6e7755b8cc6",
+    "semantic_hash": "78c49fff1c44e9114d6de6e7755b8cc6"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Kaemarungsi-WiFi-Fingerprinting.md": {
+    "mtime": 1781488606.3695385,
+    "ast_hash": "79934a41d429e975d060742e3cf9b006",
+    "semantic_hash": "79934a41d429e975d060742e3cf9b006"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Magnetic-Field-Localization.md": {
+    "mtime": 1781428343.6362996,
+    "ast_hash": "105d91b67e64ba67d93cd0366c9e86c9",
+    "semantic_hash": "105d91b67e64ba67d93cd0366c9e86c9"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/ORL-Ultrasonic-Location-System.md": {
+    "mtime": 1781439310.0810304,
+    "ast_hash": "678841e647ff95cbde3746cc085e3a48",
+    "semantic_hash": "678841e647ff95cbde3746cc085e3a48"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Pedestrian-Dead-Reckoning.md": {
+    "mtime": 1781416062.6007066,
+    "ast_hash": "ddb623d8a880cf2635afa225dc57ccb4",
+    "semantic_hash": "ddb623d8a880cf2635afa225dc57ccb4"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/RADAR-WiFi-Fingerprinting.md": {
+    "mtime": 1781478646.734082,
+    "ast_hash": "d7038fd3cd5889cbcfeeeec601c96d19",
+    "semantic_hash": "d7038fd3cd5889cbcfeeeec601c96d19"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/UWB-LSTM-Localization.md": {
+    "mtime": 1781410185.3061934,
+    "ast_hash": "c2d1970c363185e3d433b71726d209f5",
+    "semantic_hash": "c2d1970c363185e3d433b71726d209f5"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/UWSN-Localization.md": {
+    "mtime": 1781400825.799319,
+    "ast_hash": "3c03e58ec4a2827a3180e07bc61a9e24",
+    "semantic_hash": "3c03e58ec4a2827a3180e07bc61a9e24"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/UnLoc-Unsupervised-Localization.md": {
+    "mtime": 1781410740.0822828,
+    "ast_hash": "837e94f2345ddd9e1e7e76e3201319d3",
+    "semantic_hash": "837e94f2345ddd9e1e7e76e3201319d3"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Walkie-Markie-Indoor-Mapping.md": {
+    "mtime": 1781410742.7468004,
+    "ast_hash": "d8ede6e51241e2e80040b6f5aedc52ac",
+    "semantic_hash": "d8ede6e51241e2e80040b6f5aedc52ac"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/Zee-Zero-Effort-Crowdsourcing.md": {
+    "mtime": 1781410326.718167,
+    "ast_hash": "40a30e1a1e8fc177d62d39a19d834162",
+    "semantic_hash": "40a30e1a1e8fc177d62d39a19d834162"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/_index.md": {
+    "mtime": 1781845650.9865685,
+    "ast_hash": "a36c0d5ec59baec2d3deb49ea21935be",
+    "semantic_hash": "a36c0d5ec59baec2d3deb49ea21935be"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/health-check-2026-06-14-v2.md": {
+    "mtime": 1781409369.1658545,
+    "ast_hash": "74ba8f23263564833042ea01a80793d0",
+    "semantic_hash": "74ba8f23263564833042ea01a80793d0"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/health-check-2026-06-14.md": {
+    "mtime": 1781407555.5845685,
+    "ast_hash": "4a455ec454fe401234578a7e77bce227",
+    "semantic_hash": "4a455ec454fe401234578a7e77bce227"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/health-check-2026-06-14b.md": {
+    "mtime": 1781439428.804191,
+    "ast_hash": "572296c56fc7a055194e8638d1c96436",
+    "semantic_hash": "572296c56fc7a055194e8638d1c96436"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/health-check-2026-06-14c.md": {
+    "mtime": 1781440229.800193,
+    "ast_hash": "560b8eb3854ed4f4446cd6ddebcbd4fb",
+    "semantic_hash": "560b8eb3854ed4f4446cd6ddebcbd4fb"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/health-check-2026-06-15.md": {
+    "mtime": 1781492525.56099,
+    "ast_hash": "1899c97c9cd6864fdba1fb8a411fc17f",
+    "semantic_hash": "1899c97c9cd6864fdba1fb8a411fc17f"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/outputs/reference-register.md": {
+    "mtime": 1781492744.6065319,
+    "ast_hash": "499ca704689beed7da3de1a383fc6909",
+    "semantic_hash": "499ca704689beed7da3de1a383fc6909"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/knowledge/WiFi-Fingerprinting-Advances.md": {
+    "mtime": 1781497745.766935,
+    "ast_hash": "747756b198c72d3aa3bbd3eb45064f82",
+    "semantic_hash": "747756b198c72d3aa3bbd3eb45064f82"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/01331706.pdf": {
+    "mtime": 1781487510.2008548,
+    "ast_hash": "3df4f179e679784c389b5aa7b3d2fa0f",
+    "semantic_hash": "3df4f179e679784c389b5aa7b3d2fa0f"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/077620951.pdf": {
+    "mtime": 1781407592.410759,
+    "ast_hash": "7c9f41bbb9005b0a9cf12281f2bd2955",
+    "semantic_hash": "7c9f41bbb9005b0a9cf12281f2bd2955"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/1-s2.0-S1110016826000694-main.pdf": {
+    "mtime": 1781398703.2294166,
+    "ast_hash": "3355367c6860c9b2c7b2efd113a278a0",
+    "semantic_hash": "3355367c6860c9b2c7b2efd113a278a0"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/1-s2.0-S1389128625004943-main.pdf": {
+    "mtime": 1781489587.2860367,
+    "ast_hash": "fab5b1c730ec70a8e7afb65ed5e076fa",
+    "semantic_hash": "fab5b1c730ec70a8e7afb65ed5e076fa"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/1610.05424v1.pdf": {
+    "mtime": 1781401062.3881352,
+    "ast_hash": "870d81885006ca6912cde85a1b0c4673",
+    "semantic_hash": "870d81885006ca6912cde85a1b0c4673"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/1901_Enhancing Bluetooth Location Service_FINAL.pdf": {
+    "mtime": 1550548898.0,
+    "ast_hash": "c5d2db9581308a1e03327b02a0f191a1",
+    "semantic_hash": "c5d2db9581308a1e03327b02a0f191a1"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/2403.04333v1.pdf": {
+    "mtime": 1781400169.9235365,
+    "ast_hash": "fb07445f3e41cf88e190818f32a3d189",
+    "semantic_hash": "fb07445f3e41cf88e190818f32a3d189"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/601bbfbdb639558b07eb4aabffc00e184315.pdf": {
+    "mtime": 1781487581.5409088,
+    "ast_hash": "2bbacce25d4ed06d15b2ad3afa79f50c",
+    "semantic_hash": "2bbacce25d4ed06d15b2ad3afa79f50c"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/A Practical Approach to Landmark Deployment for Indoor Localization - Chen 2006.pdf": {
+    "mtime": 1781478351.4094613,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/A_Comprehensive_Review_of_Indoor_Localization_Tech.pdf": {
+    "mtime": 1781488839.2666724,
+    "ast_hash": "b3300d92520c1f2dcf4d9d765e76bf0c",
+    "semantic_hash": "b3300d92520c1f2dcf4d9d765e76bf0c"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/A_Survey_of_Indoor_Localization_Systems_and_Techno.pdf": {
+    "mtime": 1781407672.6292882,
+    "ast_hash": "d84b04a215e4aae57da041d8de9cf1e9",
+    "semantic_hash": "d84b04a215e4aae57da041d8de9cf1e9"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/A_Survey_of_Machine_Learning_for_Indoor_Positionin.pdf": {
+    "mtime": 1781407715.6718786,
+    "ast_hash": "2e11de7167fcf7a129b11aef66363bb2",
+    "semantic_hash": "2e11de7167fcf7a129b11aef66363bb2"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Adaptive_Sampling_for_Fingerprinting_Localization.pdf": {
+    "mtime": 1781497483.0414298,
+    "ast_hash": "fb5958fde6a32b0a70e8125b43e69921",
+    "semantic_hash": "fb5958fde6a32b0a70e8125b43e69921"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning .pdf | My Library |.pdf": {
+    "mtime": 1781415637.496566,
+    "ast_hash": "d9b56dd08725ed4dbbd48e3c036a8932",
+    "semantic_hash": "d9b56dd08725ed4dbbd48e3c036a8932"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Almalioglu et al_2020_Milli-RIO.pdf | My Library | Zotero.pdf": {
+    "mtime": 1781415552.5752528,
+    "ast_hash": "2807c54d5828ea0359b524ff84b140c6",
+    "semantic_hash": "2807c54d5828ea0359b524ff84b140c6"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Balakrishnan_cricket_mobicom00.pdf": {
+    "mtime": 1781409898.006883,
+    "ast_hash": "c80394e08725eb33cbd0d7ca661156d6",
+    "semantic_hash": "c80394e08725eb33cbd0d7ca661156d6"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor .pdf | My Library | Zote.pdf": {
+    "mtime": 1781410514.0371218,
+    "ast_hash": "9c1a52e5ae3ba2ae735663848fef7f4e",
+    "semantic_hash": "9c1a52e5ae3ba2ae735663848fef7f4e"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/COMST16_IP.pdf": {
+    "mtime": 1781400872.3652847,
+    "ast_hash": "34714fd74b4865b8eb5979f2a4e00130",
+    "semantic_hash": "34714fd74b4865b8eb5979f2a4e00130"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/CSI_based_Indoor_Localization.pdf": {
+    "mtime": 1781480388.191109,
+    "ast_hash": "caa32929ce0452f946a0ed95082ea723",
+    "semantic_hash": "caa32929ce0452f946a0ed95082ea723"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Data Cleansing for Indoor Positioning Wi-Fi  Fingerprinting Dataset.pdf": {
+    "mtime": 1781415391.5609252,
+    "ast_hash": "b415e6b1c1ac01b4bfd049d88b4a8ce4",
+    "semantic_hash": "b415e6b1c1ac01b4bfd049d88b4a8ce4"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Eeyes mobicom14 wang.pdf": {
+    "mtime": 1781400671.1750333,
+    "ast_hash": "74c5a257a4abb82ed086edd0f816095e",
+    "semantic_hash": "74c5a257a4abb82ed086edd0f816095e"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/IEEE Xplore Full-Text PDF.pdf": {
+    "mtime": 1781487911.3841727,
+    "ast_hash": "8779762d4fc24692f45ee248f258c18f",
+    "semantic_hash": "8779762d4fc24692f45ee248f258c18f"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Kaemarungsi 2004.pdf": {
+    "mtime": 1781422197.997749,
+    "ast_hash": "cd234e6b929ca08fcb1c6654e9e99e07",
+    "semantic_hash": "cd234e6b929ca08fcb1c6654e9e99e07"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf | My Library | Zotero.pdf": {
+    "mtime": 1781415285.474504,
+    "ast_hash": "899a833bc00a2ef3e158bf67807a20ba",
+    "semantic_hash": "899a833bc00a2ef3e158bf67807a20ba"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/ORL New Location Technique tr.97.10.pdf": {
+    "mtime": 987033564.0,
+    "ast_hash": "f499f3dbafcc96f194b8570f3b1663dc",
+    "semantic_hash": "f499f3dbafcc96f194b8570f3b1663dc"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/PDF | My Library | Zotero.pdf": {
+    "mtime": 1781415320.5681407,
+    "ast_hash": "45e14288a3589993d346ca5e5ec449c0",
+    "semantic_hash": "45e14288a3589993d346ca5e5ec449c0"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf | My Library | Zo.pdf": {
+    "mtime": 1781415719.8978372,
+    "ast_hash": "ea94ae81854f1807365bf1b3fe481207",
+    "semantic_hash": "ea94ae81854f1807365bf1b3fe481207"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Placement_optimization_positioning_nodes.pdf": {
+    "mtime": 1781488174.3686674,
+    "ast_hash": "600080a95a14621a4bd7cbab9a8f6212",
+    "semantic_hash": "600080a95a14621a4bd7cbab9a8f6212"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/RFID Localisation.pdf": {
+    "mtime": 1781415661.6543646,
+    "ast_hash": "dd0e963ab02ff45cb334077af4a198fe",
+    "semantic_hash": "dd0e963ab02ff45cb334077af4a198fe"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A Practical Approach to Landmark Deployment for Indoor Localization : 2006 3rd Annual IEEE .pdf": {
+    "mtime": 1781423742.4654894,
+    "ast_hash": "5f4136ad94872c4267ed4db07e05125a",
+    "semantic_hash": "5f4136ad94872c4267ed4db07e05125a"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A Survey of Indoor Localization Systems and Technologies : IEEE Communications Surveys & Tu.pdf": {
+    "mtime": 1781423012.9418778,
+    "ast_hash": "e93f89e2923676342cf33a422416eac9",
+    "semantic_hash": "e93f89e2923676342cf33a422416eac9"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems : Jo.pdf": {
+    "mtime": 1781424508.6754856,
+    "ast_hash": "8d92298dfd404af0e98ebb8e819bfcf4",
+    "semantic_hash": "8d92298dfd404af0e98ebb8e819bfcf4"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A comparison of deterministic and probabilistic methods for indoor localization : Journal o.pdf": {
+    "mtime": 1781479406.7882564,
+    "ast_hash": "545e6ac174cc5f88088581f31c3f4259",
+    "semantic_hash": "545e6ac174cc5f88088581f31c3f4259"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A survey of experimental evaluation in indoor localization research : 2015 International Co.pdf": {
+    "mtime": 1781424082.8055918,
+    "ast_hash": "afbf40b3ae0fc9015be5be2eecb01c6f",
+    "semantic_hash": "afbf40b3ae0fc9015be5be2eecb01c6f"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. A survey of mathematical methods for indoor localization : 2009 IEEE International Symposiu.pdf": {
+    "mtime": 1781423603.2168417,
+    "ast_hash": "2e9408066a1c454be26789b498b34054",
+    "semantic_hash": "2e9408066a1c454be26789b498b34054"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Accurate indoor localization with zero start-up cost : Proceedings of the 20th annual inter.pdf": {
+    "mtime": 1781423929.8135166,
+    "ast_hash": "48ba1aedbe00a8d210dd3921065054cd",
+    "semantic_hash": "48ba1aedbe00a8d210dd3921065054cd"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. An Indoor Localization Mechanism Using Active RFID Tag : IEEE International Conference on S.pdf": {
+    "mtime": 1781424311.4280448,
+    "ast_hash": "c16b1556d5d020c52eb5696e3669b368",
+    "semantic_hash": "c16b1556d5d020c52eb5696e3669b368"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Analysis of WLAN\u2019s received signal strength indication for indoor location fingerprinting .pdf": {
+    "mtime": 1781422436.958127,
+    "ast_hash": "1b6ce59501a2fe022133d20eba542091",
+    "semantic_hash": "1b6ce59501a2fe022133d20eba542091"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Bluetooth indoor localization with multiple neural networks : IEEE 5th International Sympos.pdf": {
+    "mtime": 1781424434.6605854,
+    "ast_hash": "b6e9c454bc45d8d0f56e5750cd145631",
+    "semantic_hash": "b6e9c454bc45d8d0f56e5750cd145631"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. CSI-Based Indoor Localization : IEEE Transactions on Parallel and Distributed Systems, 2013.pdf": {
+    "mtime": 1781479904.7204401,
+    "ast_hash": "1ba6f7dac0f529dcc2191ee74be69397",
+    "semantic_hash": "1ba6f7dac0f529dcc2191ee74be69397"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Design and Analysis of a Bluetooth-Based Indoor Localization System : Lecture Notes in Comp.pdf": {
+    "mtime": 1781424475.3928487,
+    "ast_hash": "f27bd39b8aa13995458a85a6792bc290",
+    "semantic_hash": "f27bd39b8aa13995458a85a6792bc290"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Evaluation of the reliability of RSSI for indoor localization : 2012 International Conferen.pdf": {
+    "mtime": 1781424274.5012457,
+    "ast_hash": "795de8865e89018d04d0dd267dd680e7",
+    "semantic_hash": "795de8865e89018d04d0dd267dd680e7"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Indoor localization improvement via adaptive RSS fingerprinting database : The Internationa.pdf": {
+    "mtime": 1781422514.8047054,
+    "ast_hash": "63011d6e58a3385346da85d480242c04",
+    "semantic_hash": "63011d6e58a3385346da85d480242c04"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Indoor localization without the pain : Proceedings of the sixteenth annual international co.pdf": {
+    "mtime": 1781423188.1337976,
+    "ast_hash": "b72c620e4b28fbe4410152f5c3fe1b73",
+    "semantic_hash": "b72c620e4b28fbe4410152f5c3fe1b73"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Optimal placement of reference nodes for wireless indoor positioning systems : 2014 11th In.pdf": {
+    "mtime": 1781422707.2396653,
+    "ast_hash": "557eb24d0675b5d3cfbbd6495fdc654d",
+    "semantic_hash": "557eb24d0675b5d3cfbbd6495fdc654d"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. RSSI-Based Indoor Localization With the Internet of Things : IEEE Access, 2018.pdf": {
+    "mtime": 1781423803.6031003,
+    "ast_hash": "d8d08025b8152e7b1ec8682a55d1be0b",
+    "semantic_hash": "d8d08025b8152e7b1ec8682a55d1be0b"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. Recent Advances in Indoor Localization: A Survey on Theoretical Approaches and Applications.pdf": {
+    "mtime": 1781423092.022349,
+    "ast_hash": "2d222c542e6b37c4eb33bf57e2ad7fc3",
+    "semantic_hash": "2d222c542e6b37c4eb33bf57e2ad7fc3"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. The Microsoft Indoor Localization Competition: Experiences and Lessons Learned : IEEE Signa.pdf": {
+    "mtime": 1781423641.4986045,
+    "ast_hash": "cb8ead41d2fec2bd521115762efaf754",
+    "semantic_hash": "cb8ead41d2fec2bd521115762efaf754"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Sci-Hub. WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning : 201.pdf": {
+    "mtime": 1781424404.430592,
+    "ast_hash": "bfe5be6d110626da78a72525c6936171",
+    "semantic_hash": "bfe5be6d110626da78a72525c6936171"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Survey_of_Indoor_Localization_Based_on_Deep_Learni.pdf": {
+    "mtime": 1781487195.4336755,
+    "ast_hash": "e61eaa2fba4b0900406c7867d4910f8e",
+    "semantic_hash": "e61eaa2fba4b0900406c7867d4910f8e"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/TIIS Vol 13, No 1-12.pdf": {
+    "mtime": 1550789966.0,
+    "ast_hash": "1897897da1dbb0a6922aa123519216da",
+    "semantic_hash": "1897897da1dbb0a6922aa123519216da"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf | My Library | Zotero.pdf": {
+    "mtime": 1781415304.6212249,
+    "ast_hash": "03ddb9b3fda3b6af8c168749c21294c3",
+    "semantic_hash": "03ddb9b3fda3b6af8c168749c21294c3"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Through-the-wall.pdf": {
+    "mtime": 1781415699.085974,
+    "ast_hash": "0ca915c72d9921e915ab9ce89b5b17f4",
+    "semantic_hash": "0ca915c72d9921e915ab9ce89b5b17f4"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor .pdf | My Library | Zotero.pdf": {
+    "mtime": 1781415564.51244,
+    "ast_hash": "1143f3b4b8b02c88a8c8d2328bf3a83c",
+    "semantic_hash": "1143f3b4b8b02c88a8c8d2328bf3a83c"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/UWB_Indoor_Localization_Using_Deep_Learning_LSTM_N.pdf": {
+    "mtime": 1781409639.0963528,
+    "ast_hash": "70ee47f392e28fbf073a104c4a6a8c69",
+    "semantic_hash": "70ee47f392e28fbf073a104c4a6a8c69"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Wang et al. - 2021 - Fast Construction of the Radio Map Based on the Im.pdf | My Library | Zotero.pdf": {
+    "mtime": 1781415477.5197294,
+    "ast_hash": "24ffa9e50ee29004c81dc1290b12d4c5",
+    "semantic_hash": "24ffa9e50ee29004c81dc1290b12d4c5"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the .pdf | My Library | Zotero.pdf": {
+    "mtime": 1781410537.1148841,
+    "ast_hash": "51df4597c336693d0c124664225e283b",
+    "semantic_hash": "51df4597c336693d0c124664225e283b"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/Zero-Configuration, Robust Indoor Localization Theory and Experimentation.pdf": {
+    "mtime": 1781423863.7396073,
+    "ast_hash": "e0e19c1cee798a45e4f3891c224fd869",
+    "semantic_hash": "e0e19c1cee798a45e4f3891c224fd869"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/applsci-15-01544-v2.pdf": {
+    "mtime": 1781399319.480967,
+    "ast_hash": "b3300d92520c1f2dcf4d9d765e76bf0c",
+    "semantic_hash": "b3300d92520c1f2dcf4d9d765e76bf0c"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/distribution-of-wlan-received-signal-strength-indication-for-ind.pdf": {
+    "mtime": 1781487696.9535694,
+    "ast_hash": "5104497d484901ae268eafb8d69f65c7",
+    "semantic_hash": "5104497d484901ae268eafb8d69f65c7"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/electronics-11-00864.pdf": {
+    "mtime": 1781424049.5575325,
+    "ast_hash": "c447ba1a7c365c47bff681dc5f7499e8",
+    "semantic_hash": "c447ba1a7c365c47bff681dc5f7499e8"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/ez-mobicom.pdf": {
+    "mtime": 1781409679.9691749,
+    "ast_hash": "ef9593e2edca9e0eaa738b8de6e6a1ef",
+    "semantic_hash": "ef9593e2edca9e0eaa738b8de6e6a1ef"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf": {
+    "mtime": 1781497631.977797,
+    "ast_hash": "6c88e863e592e9ca17ff7080a776d0ea",
+    "semantic_hash": "6c88e863e592e9ca17ff7080a776d0ea"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/infocom2000.pdf": {
+    "mtime": 1781401025.4561105,
+    "ast_hash": "7ff25855833bf58607cd73e75750239a",
+    "semantic_hash": "7ff25855833bf58607cd73e75750239a"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/maneerat2014.pdf": {
+    "mtime": 1781487817.0820193,
+    "ast_hash": "04cc0f7edb14fd5994ad9355414294bf",
+    "semantic_hash": "04cc0f7edb14fd5994ad9355414294bf"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/nsdi13-final130.pdf": {
+    "mtime": 1781407822.160133,
+    "ast_hash": "b4c97b64d123a0ec6753ee58e2e73d19",
+    "semantic_hash": "b4c97b64d123a0ec6753ee58e2e73d19"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/ojw28_thesis.pdf": {
+    "mtime": 1781409735.6832778,
+    "ast_hash": "def58cc49352e0ed577035a872763588",
+    "semantic_hash": "def58cc49352e0ed577035a872763588"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/p-0012--DESIGN_OF_INDOOR_POSITIONING_SYSTEMS.pdf": {
+    "mtime": 1781422263.3786988,
+    "ast_hash": "7c4b9a4a021e6f34641941628bf7a386",
+    "semantic_hash": "7c4b9a4a021e6f34641941628bf7a386"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/s11277-021-08209-5.pdf": {
+    "mtime": 1781423245.299102,
+    "ast_hash": "0291fd5eba96eebde6657f6875ebb705",
+    "semantic_hash": "0291fd5eba96eebde6657f6875ebb705"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/sensors-17-02327-v2.pdf": {
+    "mtime": 1781423953.348429,
+    "ast_hash": "8ba00dcecbbfb6687645e29597bea1ed",
+    "semantic_hash": "8ba00dcecbbfb6687645e29597bea1ed"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/sensors-20-01382-v2.pdf": {
+    "mtime": 1781424522.5482495,
+    "ast_hash": "be88d36680a85ba32698e95238a25a83",
+    "semantic_hash": "be88d36680a85ba32698e95238a25a83"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/sensors-21-08086.pdf": {
+    "mtime": 1781423439.4078496,
+    "ast_hash": "4103b19cca575db8cc6edf82a9aa8972",
+    "semantic_hash": "4103b19cca575db8cc6edf82a9aa8972"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/sensors-22-09380.pdf": {
+    "mtime": 1781423357.04094,
+    "ast_hash": "436f4bd8da59595466507963863a0893",
+    "semantic_hash": "436f4bd8da59595466507963863a0893"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/singh-machinelearningbased-2021.pdf": {
+    "mtime": 1781489705.0061057,
+    "ast_hash": "a152ec5439f43bfffc79769066ccb21b",
+    "semantic_hash": "a152ec5439f43bfffc79769066ccb21b"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/unloc.pdf": {
+    "mtime": 1781407785.4775548,
+    "ast_hash": "686de969d89a707f3c3885122911b6dc",
+    "semantic_hash": "686de969d89a707f3c3885122911b6dc"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/v1_ CSI_based_Indoor_localization_using_Ensemble_Neural_Networks.pdf": {
+    "mtime": 1781480347.3459678,
+    "ast_hash": "b55cf451423cb0154c41c50bde1dfef3",
+    "semantic_hash": "b55cf451423cb0154c41c50bde1dfef3"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/wisanmongkol2019.pdf": {
+    "mtime": 1781488025.0302515,
+    "ast_hash": "7897cd4a9c23f7fedb8be7f069d72739",
+    "semantic_hash": "7897cd4a9c23f7fedb8be7f069d72739"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/youssef.pdf": {
+    "mtime": 1781400820.6237674,
+    "ast_hash": "ae5a5255d244b47e800a8641beb697cf",
+    "semantic_hash": "ae5a5255d244b47e800a8641beb697cf"
+  },
+  "/Users/markschulz/Documents/my_obsidian/Localization Research/raw/zee.pdf": {
+    "mtime": 1781409710.6998441,
+    "ast_hash": "ea02666a0041c0dbecb3a30155459cbb",
+    "semantic_hash": "ea02666a0041c0dbecb3a30155459cbb"
+  }
+}
