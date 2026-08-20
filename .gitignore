@@ -1,7 +1,8 @@
-# Raw source PDFs (198M of large binaries, 85 files). Deliberately untracked: they are
-# published papers, re-retrievable, and they never delta-compress. NOTE: this means git
-# holds no copy of them at all -- not here, not on origin -- so their only backup is
-# whatever covers the working directory.
+# raw/ no longer lives here -- the 83 source PDFs (208MB) were relocated on 2026-08-20 to
+# ~/Dropbox/Research Library/Localization/raw/. This rule stays as a guard: if PDFs are ever
+# dropped back in, they must not enter git. They are published papers, re-retrievable, and
+# they never delta-compress. Article frontmatter still cites them as "raw/<file>", relative
+# to the library root above -- see CLAUDE.md.
 raw/
 
 # macOS metadata

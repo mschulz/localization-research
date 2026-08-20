@@ -1,5 +1,12 @@
 # Knowledge Base Instructions  
 ## Architecture  
+- **raw/ lives OUTSIDE this repo and outside the Obsidian vault**, at
+  `~/Dropbox/Research Library/Localization/raw/` (relocated 2026-08-20: 83 PDFs, 208MB).
+  Every `raw/...` path below and in article frontmatter is relative to
+  `~/Dropbox/Research Library/Localization/`, so those references stay valid unchanged.
+  Moved out because Obsidian does not full-text search PDF contents, so the corpus added
+  208MB of sync and file-explorer weight while contributing nothing to search, and because
+  the synthesised layer (knowledge/ + outputs/, ~740KB) is what carries the value.
 - raw/ contains unprocessed source material. Never modify files here.  
 - knowledge/ contains compiled articles. Only the LLM writes here.  
 - outputs/ stores query results, reports, and deliverables.  

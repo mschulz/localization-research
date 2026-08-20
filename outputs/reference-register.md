@@ -4,7 +4,9 @@
 > Generated: 2026-06-14  
 > Purpose: Preserve all references from compiled sources for deeper research.  
 > ✅ = paper is present in raw/ and has been compiled into a knowledge article  
-> To add a reference as a source: download the paper and place in raw/, then run compilation.
+> To add a reference as a source: download the paper into the library at
+> `~/Dropbox/Research Library/Localization/raw/` (relocated 2026-08-20 — it is no longer
+> inside this repo or the vault), then run compilation.
 
 ---
 
