@@ -3,7 +3,7 @@
 > Last updated: 2026-08-20 (last compilation run: 2026-08-20)  
 > Sources in raw/: 83 PDFs, all content-bearing. `raw/` now resolves to `~/Dropbox/Research Library/Localization/raw/` — see CLAUDE.md  
 > Articles: **24** (sources 1–82 compiled or status-flagged; the 2026-08-20 run compiled the last 3 unprocessed sources — Bluetooth direction finding, Kriging-guided adaptive sampling, and 3-D tensor completion — adding 1 article and expanding 2)  
-> Register coverage: complete — every source declared in article frontmatter has a `reference-register.md` entry carrying its filename (repaired 2026-08-20). **Nine sources are 1-page captures**, now marked ⚠️ PARTIAL there; recompiling those from full texts is the outstanding follow-up
+> Register coverage: complete — every source declared in article frontmatter has a `reference-register.md` entry carrying its filename (repaired 2026-08-20). **Nine sources are 1-page captures**, marked ⚠️ PARTIAL there. The two whose full text was already on disk (Sources 23 and 83) were recompiled 2026-08-20 — both changed their articles. The remaining seven need their full texts obtained first
 
 ## Articles
 

@@ -421,7 +421,7 @@ Tan, T., Zhang, L., Li, Q. *An Efficient Fingerprint Database Construction Appro
 Wang, Z., Zhang, L., Kong, Q., Wang, K. *Fast Construction of the Radio Map Based on the Improved Low-Rank Matrix Completion and Recovery Method for an Indoor Positioning System.* Journal of Sensors (Hindawi), vol. 2021, Article ID 2017208, 12 pages. DOI: 10.1155/2021/2017208. Shandong University of Technology. → [[WiFi-Fingerprinting-Advances]]
 
 **Source file**: `raw/fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf` (12 pages, complete, fully text-extractable).
-**Compiled**: ✅ (attribution corrected 2026-08-20 — was "Wang, X. et al., *Fast low-rank matrix recovery for indoor radio map construction*", wrong first initial and a paraphrased title, with no filename)
+**Compiled**: ✅ **Recompiled 2026-08-20 from this complete 12-page copy** — the article section had been written from the 1-page capture and carried no equations, experiment or numbers. Added: the low-rank justification from the log-distance model, the F-parameter regularised completion, robust-PCA sparse-noise recovery, the combined model with split penalty factors, and the 342-RP/26-AP experiment with Table 1 (improved completion 6.52 dBm vs plain low-rank 9.83 vs cubic spline 11.69–50.13). (Attribution also corrected — was "Wang, X. et al., *Fast low-rank matrix recovery for indoor radio map construction*", wrong first initial and a paraphrased title, with no filename.)
 
 *(Low-rank matrix completion to fill a sparsely-surveyed radio map, plus an explicit **low-rank matrix recovery** denoising step; an F-parameter stabilises the optimisation. Workflow: sparse evenly-spaced reference points → partial radio map → completion → noise removal → standard KNN/probabilistic localization.)*
 
@@ -591,7 +591,7 @@ Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-Based Indoor Localiza
 **Source file**: `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 11).**
 ✅ **Compiled** — Full paper text sourced from Academia.edu (2026-06-15). Article substantially expanded with complete system description, equations, and experimental results.
 
-🔁 **The complete 11-page paper has been in `raw/` all along**, as `raw/CSI_based_Indoor_Localization.pdf` — registered at Source 83. It was unregistered until 2026-08-20, which is why the 2026-06-15 compilation went to Academia.edu for a full text that was already on disk. **Prefer Source 83 for any recompilation.**
+🔁 **The complete 11-page paper has been in `raw/` all along**, as `raw/CSI_based_Indoor_Localization.pdf` — registered at Source 83, and the article was recompiled from it on 2026-08-20. The root cause is now recorded in [[CSI-Indoor-Localization]]'s *Source Versions* section: that article described **this** 1-page capture as the "full journal version" and Source 83's complete manuscript as a "shorter INFOCOM preprint" — backwards in both directions, which is why the 2026-06-15 compilation went to Academia.edu for a text already on disk. **Compile from Source 83.**
 
 *(FILA system: CSI-based propagation model + fingerprinting; CSI_eff weighted average of 30 subcarrier groups; time-domain IFFT multipath mitigation; refined path loss model d = f(CSI_eff, σ, n); Bayesian fingerprinting with Pearson correlation prior; Intel iwl5300 NIC; median 0.45m single room / 1.07–1.2m multi-room; 24–25% over Horus; tracking latency 0.01s)*
 
@@ -995,8 +995,8 @@ Lu, S., Zhang, J., Ma, X., Kan, C. *Efficient Kernel Based 3-D Source Localizati
 
 Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-based Indoor Localization.* IEEE Transactions on Parallel and Distributed Systems, Vol. 24, No. 7, July 2013 (accepted 2012). DOI: 10.1109/TPDS.2012.214. HKUST / Sun Yat-sen University. → [[CSI-Indoor-Localization]]
 
-**Source file**: `raw/CSI_based_Indoor_Localization.pdf` (**11 pages, complete**, fully text-extractable).
-**Compiled**: ✅ — registered 2026-08-20.
+**Source file**: `raw/CSI_based_Indoor_Localization.pdf` (**11 pages, complete**, fully text-extractable). Header reads "IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS … accepted for publication in a future issue" — the accepted TPDS manuscript, not a conference preprint.
+**Compiled**: ✅ — registered and recompiled 2026-08-20. **The recompilation was not a formality:** the article's Horus comparison for the corridor scenario claimed "FILA 1.07 m median vs Horus ~1.42 m, ~25% gain", but the paper reports both systems reaching a median below 1.25 m there, with FILA ahead by 0.55 m only at the 90th percentile. 1.42 m appears nowhere in the paper and 1.07 m is a mean from a different configuration. Corrected, along with the reversed version story in that article's *Source Versions* section.
 
 🔁 **Second copy of Source 38, and the better one.** Source 38's file is a 1-page capture of the same paper; this is the full text. Registered separately rather than merged because they are distinct files with distinct MD5s, and the corpus tolerates duplicate acquisitions where both are recorded — see the Aziz & Koo pair. The lesson is in Source 38's note: a full text sitting in `raw/` under an unregistered filename sent a compilation run to the open web for something it already had.
 
@@ -1017,7 +1017,7 @@ What was actually wrong, now fixed:
   - **Source 23** was "Wang, X. et al. — *Fast low-rank matrix recovery*". It is Wang, **Z.**, Zhang, Kong & Wang, Hindawi J. Sensors 2021, Article ID 2017208.
 - **1 file was a genuinely unregistered duplicate** — `CSI_based_Indoor_Localization.pdf`, now **Source 83**.
 
-**Numbering note:** entries run 1–83 with **no Source 34**. That number belonged to `raw/fingerprint thesis.pdf`, a 1-page Zotero title-page placeholder deleted in June 2026 and superseded by Source 36 (the full Kaemarungsi thesis); `health-check-2026-06-14b.md` records the removal. The gap is deliberate — renumbering would invalidate every citation of a higher-numbered source, including the ones in `_index.md` and the articles.
+**Numbering note:** entries run 1–83 with **no Source 34**. That number belonged to a file named `fingerprint thesis.pdf` — deliberately written without the `raw/` prefix here, so integrity sweeps do not read a note about a deleted file as a live reference to one — a 1-page Zotero title-page placeholder deleted in June 2026 and superseded by Source 36 (the full Kaemarungsi thesis); `health-check-2026-06-14b.md` records the removal. The gap is deliberate — renumbering would invalidate every citation of a higher-numbered source, including the ones in `_index.md` and the articles.
 
 ## Provenance warning: nine sources are 1-page captures
 
@@ -1031,6 +1031,8 @@ Checked page-by-page on 2026-08-20. **Nine of the eleven files above hold only p
 | Wang et al., Hindawi J. Sensors 2021 Art. 2017208 | `Wang et al. - 2021 - Fast Construction…pdf`, 1 of 12 pp | **Source 23**, 12 pp |
 
 The FILA case is the instructive one: the 2026-06-15 run went to Academia.edu for a full text that was sitting in `raw/` unregistered. **Duplicate acquisitions are not always redundant — check which copy is complete before compiling.** Recompiling Sources 21–32 from full texts, where they can be obtained, is the highest-value follow-up this register can point at.
+
+**Progress, 2026-08-20:** the **two cases needing no acquisition are done** — Source 83 (FILA) and Source 23 (Wang et al. 2021) were recompiled from the complete copies already in `raw/`. Both recompilations changed the articles rather than merely confirming them: Wang's section gained its entire method and experiment, and FILA's Horus comparison lost a fabricated-looking corridor row. That is the argument for doing the remaining **seven**: Sources 21, 22, 24, 25, 26, 27, 30, 31 and 32 still rest on page 1, and each would need its full text obtained first.
 
 ---
 

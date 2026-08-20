@@ -1,6 +1,8 @@
 ---
 tags: [WiFi, CSI, fingerprinting, OFDM, indoor-localization, RSSI, FILA, device-based, multipath, physical-layer, propagation-model, trilateration, Bayesian, ensemble-learning, MIMO, data-augmentation]
 date-compiled: 2026-06-15
+updated: 2026-08-20
+recompiled: 2026-08-20 — verified against the full 11-page TPDS manuscript in raw/; one unsupported comparison corrected
 source-files:
   - "raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf"
   - "raw/CSI_based_Indoor_Localization.pdf"
@@ -192,14 +194,15 @@ CSI is dramatically more stable than RSSI over time. Even in the ideal chamber e
 
 ### Result 3: CSI Fingerprinting vs. Horus
 
-| Environment | FILA median | Horus median | FILA gain |
+| Environment | FILA | Horus | FILA gain |
 |---|---|---|---|
-| Laboratory | **0.65 m** | 0.8 m | ~24% |
-| Corridor (6 APs) | **1.07 m** | ~1.42 m | ~25% |
-| Lab (90th percentile error) | **1.3 m** | 1.6 m | — |
-| Corridor (90th percentile improvement) | **0.55 m better** than Horus | — | — |
+| Laboratory (3 APs, same room) | median **0.65 m**; 50% of errors < 0.6 m | median 0.8 m | ~24% |
+| Laboratory, 90th percentile | error within **±1.3 m** | within 1.6 m | — |
+| Corridor (6 APs, multiple rooms) | median **< 1.25 m** | median **< 1.25 m** — *the same* | **0.55 m** better at the 90th percentile |
 
-Effect of AP density: Both approaches improve with more APs, but FILA consistently reduces mean distance error by ~29% on average across 1–6 APs.
+> **Corrected 2026-08-20 on recompilation from the full paper.** This table previously claimed the corridor as "FILA 1.07 m median vs Horus ~1.42 m median, ~25% gain". The paper says something different and less flattering: in the corridor **both approaches reach a median below 1.25 m**, and FILA's advantage appears only in the tail — 0.55 m at the 90th percentile. The figure 1.42 m appears **nowhere** in the paper, and 1.07 m is a *mean* under a specific 6-AP/3-AP-in-computation configuration, not a corridor median. This is the kind of error a 1-page source invites: a real number from one context migrating into a comparison it does not belong to, with its counterpart filled in to match.
+
+Effect of AP density: both approaches improve with more APs. FILA **reduced mean distance error by 29% on average**, which the authors attribute to dense AP deployment — they note explicitly that the scheme's advantage shrinks when APs are sparse. For single-link *distance determination* (not position), FILA outperforms the RSSI-based scheme by **around 3×**, with up to **10× accuracy gain** at the best positions.
 
 ### Result 4: Latency
 
@@ -343,7 +346,7 @@ The ~30% improvement over NDR (4.3 cm → 3.1 cm) is achieved with 11 MLPs; accu
 ### Accuracy
 - **FILA propagation model** (single room): Median 0.45 m; 90th percentile 1.0 m
 - **FILA fingerprinting** (lab): Median 0.65 m vs. Horus 0.80 m (~24% improvement)
-- **FILA multi-room corridor**: Median 1.07–1.2 m; improvement over RSSI up to 10× at best positions
+- **FILA multi-room corridor**: median < 1.25 m (matched by Horus); mean 1.07 m in the 6-AP configuration; single-room corridor median 1.2 m. Improvement over RSSI up to 10× at best positions, ~3× for single-link distance determination
 - **Sobehy et al. 2019 ensemble (11 MLPs)**: **3.1 cm MSE** on 4×2m MIMO tabletop testbed
 - **Sobehy et al. NDR baseline**: 4.3–4.5 cm MSE; CNN baseline: 32 cm MSE
 
@@ -399,9 +402,12 @@ The ~30% improvement over NDR (4.3 cm → 3.1 cm) is achieved with 11 MLPs; accu
 
 ## Source Versions
 
-This article covers two versions of the same work:
-- **IEEE INFOCOM 2012 conference paper** (preprint): `raw/CSI_based_Indoor_Localization.pdf` — shorter, introduces the core FILA system
-- **IEEE TPDS 2013 journal paper** (full version): `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — expanded evaluation, additional scenarios
+**Corrected 2026-08-20 — the previous description of these two files was backwards in both directions**, and that error is why the 2026-06-15 compilation went to Academia.edu for a full text that was already on disk.
+
+- `raw/CSI_based_Indoor_Localization.pdf` — **the complete 11-page accepted TPDS manuscript** ("accepted for publication in a future issue of this journal, but has not been fully edited"), not the "shorter INFOCOM preprint" this section used to call it. Registered as Source 83. **This is the copy to compile from.**
+- `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — a **1-page capture**, page 1 of 11, not the "full version with expanded evaluation" it was described as. Source 38.
+
+Both are the same TPDS 24(7), July 2013 paper; one is whole and one is a title page. Believing the whole one was a short preprint, and the title page the journal version, left the article sourced from the open web instead of from `raw/` — and left this recompilation's corrections undiscovered for two months.
 
 The Sobehy et al. 2019 ensemble paper (`raw/v1_ CSI_based_Indoor_localization_using_Ensemble_Neural_Networks.pdf`) builds on the TPDS version.
 

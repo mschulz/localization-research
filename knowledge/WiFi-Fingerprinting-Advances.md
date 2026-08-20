@@ -2,6 +2,7 @@
 tags: [WiFi, fingerprinting, indoor-localization, survey, crowdsourcing, collaborative-localization, sparse-recovery, deployment-challenges, semisupervised, trajectory-learning, node-placement, deep-learning, model-compression, dictionary-learning, embedded, Kriging, geostatistics, adaptive-sampling, CSI, channel-covariance, GPR, WKNN]
 date-compiled: 2026-06-15
 updated: 2026-08-20
+recompiled: 2026-08-20 — Wang et al. 2021 section rebuilt from the full 12-page paper (was a 1-page capture)
 source-files:
   - "raw/COMST16_IP.pdf"
   - "raw/1610.05424v1.pdf"
@@ -250,17 +251,33 @@ Result: the fingerprint database can be recovered from **a small fraction of mea
 
 ### Fast Radio Map Construction via Low-Rank Matrix Recovery (Wang et al., 2021)
 
-Wang, Z., Zhang, L., Kong, Q., Wang, K. *Fast Construction of the Radio Map Based on the Improved Low-Rank Matrix Completion and Recovery Method.* Journal of Sensors, 2021. Shandong University of Technology.
+Wang, Z., Zhang, L., Kong, Q., Wang, K. *Fast Construction of the Radio Map Based on the Improved Low-Rank Matrix Completion and Recovery Method for an Indoor Positioning System.* Journal of Sensors (Hindawi), vol. 2021, Article ID 2017208, 12 pages. DOI: 10.1155/2021/2017208. School of Computer Science and Technology, Shandong University of Technology.
 
-Similar matrix-completion approach but adds an explicit **noise removal** step using a **low-rank matrix recovery** algorithm. The Frobenius parameter (F-parameter) is introduced to stabilise the optimisation when filling sparse data. Workflow:
+> **Recompiled 2026-08-20 from the full 12-page paper.** The earlier version of this section was written from a 1-page capture and carried the workflow but no equations, no experiment and no numbers.
 
-1. Deploy a small number of evenly-spaced reference points (rather than dense survey)
-2. Collect RSS at those points → partial radio map
-3. Low-rank matrix completion → complete radio map
-4. Low-rank matrix recovery → noise removal
-5. Feed completed, denoised radio map to standard KNN or probabilistic localization
+**Why the RSS matrix is low-rank**, which is the premise everything else rests on: with m APs and n reference points, the radio map is an n × m matrix of RSS vectors paired with coordinates. Signal strength follows the log-distance model P_r(d) = P_t − P(d₀) − 10n·log₁₀(d/d₀), so **adjacent reference points sit at almost the same distance from a given AP and therefore record almost the same RSS**. That spatial correlation is what makes the matrix low-rank, and low rank is what makes recovery from a partial survey possible at all.
 
-Achieves expected accuracy with far fewer initial measurements than a full survey.
+**Two problems, two terms.** The paper is explicit that survey cost is only half the difficulty: the collected RSS is also noisy, from person movement, handset orientation and device sensors. Plain completion underperforms on noisy input, so their model handles both at once.
+
+1. **Completion with the F-parameter.** Rank minimisation subject to the observed entries is NP-hard, so it is relaxed to the nuclear norm ‖X‖\* (the convex hull of rank). Their regularised model adds a Frobenius term — min τ‖X‖\* + ‖X‖²_F subject to P_Ω(X) = P_Ω(M) — whose solution converges to the nuclear-norm optimum as τ → ∞, solved through an augmented Lagrangian with SVD steps. The **F-parameter is what stabilises the optimisation** when the observed set Ω is sparse.
+2. **Recovery for sparse noise.** Classical PCA assumes X = A₀ + E₀ with E₀ i.i.d. Gaussian. Real RSS noise is **sparse rather than Gaussian**, so PCA does not apply; instead decompose X = A + E with A low-rank and E sparse, i.e. min rank(A) + λ‖E‖₀ — robust PCA.
+3. **The combined model**, which is the actual contribution: min rank(A) + λ‖E‖₀ + μ‖A‖_F subject to P_Ω(X) = P_Ω(A + E), convexified to min ‖A‖\* + λ‖E‖₁ + μ‖A‖²_F. Because two constraints are now present, the penalty factor is **split** — Y = ⟨Y₁, Y₂⟩ and ρ = ⟨ρ₁, ρ₂⟩ in the augmented Lagrangian. Completion and denoising happen in one optimisation rather than as two passes.
+
+**Experiment.** 4th floor of building 9, Shandong University of Technology: **342 reference points** on a 0.5 m grid, **26 APs**, RSS collected with a Redmi K30 Pro. The ground-truth radio map took **100 samples per reference point**, outlier-removed and averaged — and, in the authors' words, "weeks and a lot of manpower". They then discard 60% of it and rebuild from the remaining **40% of reference points**.
+
+**Completion error** θ = X′ − X, the gap between the true radio map and the one rebuilt from 40% of the data. Most errors fall **below 3 dBm**, and against cubic spline interpolation (Table 1, dBm):
+
+| Method | Completion error |
+|---|---|
+| **Improved low-rank completion (theirs)** | **6.52** |
+| Plain low-rank completion | 9.83 |
+| Cubic spline, RPs along y-axis | 11.69 |
+| Cubic spline, RPs along x-axis | 25.48 |
+| Cubic spline, RPs from origin | 50.13 |
+
+Two things worth taking from that table. The F-parameter and sparse-noise terms are doing real work — **9.83 → 6.52 dBm** against plain low-rank completion on identical input. And **interpolation is wildly sensitive to how the reference points are arranged** (11.69 to 50.13 dBm across three layouts of the same count), which is precisely the fragility a low-rank method avoids: it uses the whole matrix's structure rather than local neighbours.
+
+**Caveats.** Single site, single floor, single handset — no cross-device or cross-environment test, and device heterogeneity is a known fingerprinting weakness this article covers elsewhere. Positioning-error CDFs are reported by figure rather than tabulated, so the *localization* gain is harder to quote than the completion gain. **The radio map is not public**: available only under licence from the corresponding author, so the result cannot be independently reproduced. Funded by Shandong Provincial NSF (ZR2019BF022) and NSFC (62001272).
 
 ### Data Cleansing for WiFi Fingerprinting Datasets (Quezada-Gaibor et al., ~2022)
 
