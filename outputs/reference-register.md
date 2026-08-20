@@ -1,3 +1,4 @@
+
 # Reference Register
 
 > Generated: 2026-06-14  
@@ -881,6 +882,59 @@ Sobehy, A., Renault, É., & Mühlethaler, P. *CSI based Indoor Localization usin
 **Compiled**: 2026-06-15 from full 13-page open-access HAL PDF.
 
 *(Ensemble MLP approach for CSI-based indoor localization on 2×8 MIMO hardware. Input: 65-point slope (finite difference) vector derived from polynomial-fitted CSI magnitude spectrum — more stable and discriminative than absolute magnitude or phase. Data augmentation: Gaussian noise on both position (σ=1/3cm) and magnitude. Ensemble: 11 MLPs with varied hyperparameters/training subsets; mixed by weighted mean or median. Result: 3.1 cm MSE on Arnold et al. 2019 4×2m tabletop dataset, vs 4.3cm NDR baseline and 32cm CNN baseline. Key findings: spectral slope outperforms absolute magnitude; ensemble diversity more valuable than per-model accuracy; CNN underperforms MLP-ensemble due to real/imaginary temporal instability.)*
+
+---
+
+## Source 75: tabibiazar2011.pdf
+
+Tabibiazar, A., Basir, O. *Compressive Sensing Indoor Localization.* IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2011. Electrical and Computer Engineering Department, University of Waterloo. → [[Compressive-Sensing-Localization]]
+
+**Source file**: [`raw/tabibiazar2011.pdf`](../raw/tabibiazar2011.pdf) (6 pages, fully text-extractable).
+**Compiled**: 2026-08-14 ✅
+
+*(WSN localization recast as sparse signal recovery over a discretized spatial grid; ℓ₁-norm minimization from M ≥ O(K·log(N/K)) measurements; sparsifying dictionary Ψ built from grid signal readings; dictionary coherence µ(Ψ); measurements at 2.443 GHz; accuracy governed by SNR + detection threshold; 44×44 sparsity matrix in worked example; dynamic dictionary update proposed as future work. Full reference list — incl. Data Compression Conference DCC 2010 — retained in the PDF.)*
+
+---
+
+## Source 76: balestrieri2020.pdf
+
+Balestrieri, E., De Vito, L., Picariello, F., Tudosa, I. *A Method Exploiting Compressive Sampling for Localization of Radio Frequency Emitters.* IEEE Transactions on Instrumentation and Measurement (accepted 2019, publication 2020). DOI: 10.1109/TIM.2019.2954759. University of Sannio, Benevento, Italy. → [[Compressive-Sensing-Localization]]
+
+**Source file**: [`raw/balestrieri2020.pdf`](../raw/balestrieri2020.pdf) (10 pages, fully text-extractable).
+**Compiled**: 2026-08-14 ✅
+
+*(RF-emitter localization using Wideband Spectrum Sensors exploiting Compressive Sampling; R receivers at known coordinates; Non-Uniform Sampling below Nyquist over a wide band; COTS hardware receiver 1 MHz–3.8 GHz, 10 dBi antenna ~2.5 GHz. With 10 receivers, accuracy ~1 m; RMSE close to ML and CRLB, matches uniform-sampling performance up to compression ratio CR=64. Compared against ML, SDP-DRSS, WTLS-URSS/WTLS-DRSS; metrics RMSE (∆) + std dev (σ) vs CR and shadowing σ. Full reference list retained in the PDF.)*
+
+---
+
+## Source 77: 2107.01192v1.pdf
+
+Wang, L., Tiku, S., Pasricha, S. *CHISEL: Compression-Aware High-Accuracy Embedded Indoor Localization with Deep Learning.* arXiv:2107.01192v1, 2021. Colorado State University. → [[WiFi-Fingerprinting-Advances]], [[Indoor-Localization-ML-Methods]]
+
+**Source file**: [`raw/2107.01192v1.pdf`](../raw/2107.01192v1.pdf) (4 pages, fully text-extractable).
+**Compiled**: 2026-08-14 ✅
+
+*(Convolutional Autoencoder + CNN classifier, compression-aware. RSSI fingerprints reshaped to 24×24×1 images + data augmentation. Full model 171,209 params / ~801 KB; QAT + pruning → ~148 KB (81% reduction), latency −31%. UJIIndoorLoc (3 buildings, 5 floors); ~100% building/floor accuracy; ~6.95 m mean localization error (CHISEL-DA); ~2.63 m (38%) improvement over SAE / 1D-CNN prior works. Aggressive quantization trades up to ~3× accuracy for latency. Full reference list retained in the PDF.)*
+
+---
+
+## Source 78: s41598-024-75306-3.pdf
+
+Yang, J., Wang, Y., Cheng, W., Liu, Y., Lu, J., Wu, J., Qin, S., Han, G. *A fingerprint dictionary processing approach in indoor localization system based on wi-fi.* Scientific Reports 14, 2024. → [[WiFi-Fingerprinting-Advances]]
+
+**Source file**: [`raw/s41598-024-75306-3.pdf`](../raw/s41598-024-75306-3.pdf) (17 pages, fully text-extractable).
+**Compiled**: 2026-08-14 ✅
+
+*(FDP — Fingerprint Dictionary Preprocessing — applies Convolutional Dictionary Learning (CDL) to offline radio-map data: learns convolutional kernels giving a sparse representation of AP RSS at each RP; supports denoising/anomaly detection and database compression. Online phase matches target fingerprint by sparse dictionary coding. Reported: ~28.1% data reduction (compression ratio 63.36%, ~35 KB); localization-accuracy improvements ~41–48% (41.48% overall) vs classical radio-map upgrade models such as LAAFU. Full reference list retained in the PDF.)*
+
+---
+
+## Source 79: I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf
+
+*LLM-generated review article* (25 pages) — a machine-generated survey (TOC-style: localization taxonomy, state-estimation framing, Bayesian/ranging/CSI-fingerprinting methods, global re-localization, loop-closure, metric-map/submap registration, multi-robot, LiDAR modalities). The filename is the generation prompt; the document contains no verifiable primary citations.
+
+**Source file**: [`raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf`](<../raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf>)
+**Status**: ⚠️ NOT COMPILED — synthetic secondary source. Per CLAUDE.md (cite specific source files; flag contradictions), unverifiable generated content was not merged into knowledge articles. Cataloged here for provenance; its topics (CS fingerprinting, Bayesian/state-estimation, SLAM/loop-closure) are already covered by primary sources in [[WiFi-Fingerprinting-Advances]], [[Indoor-Localization-ML-Methods]], and [[Compressive-Sensing-Localization]].
 
 ---
 

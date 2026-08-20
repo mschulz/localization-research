@@ -762,4 +762,6 @@ Singh et al. survey six public Wi-Fi RSSI fingerprint databases:
 - [[Indoor-IPS-Datasets]] — class imbalance problem (Alhomayani & Mahoor) motivates the VAE/CVAE oversampling methods covered in the Dataset Augmentation section above; imbalance statistics sourced from public datasets catalogued there
 - [[WiFi-Fingerprinting-Advances]] — WiDeep (deep learning WiFi fingerprinting) and zero-config SVD (Lim et al.) are closely related to the DL approaches surveyed by Roy & Chowdhury and Kordi et al.
 - [[Magnetic-Field-Localization]] — SLAM-based ML methods covered in Roy & Chowdhury survey overlap with magnetic SLAM approaches; neural networks for magnetic fingerprinting also covered in Kordi 2024
+- [[Compressive-Sensing-Localization]] — ℓ₁ / sparse-recovery and dictionary-learning localization; a distinct mathematical-methods branch alongside the KNN/SVM/DL/Kalman families surveyed here
+- [[WiFi-Fingerprinting-Advances]] — CHISEL (convolutional autoencoder + CNN with model compression/quantization for embedded deployment) extends the deep-learning fingerprinting methods surveyed here toward resource-constrained IoT devices
 - [[CSI-Indoor-Localization]] — Kordi 2024 explicitly covers CSI as a DL input modality alongside RSS; CSI+DL is an emerging high-accuracy combination

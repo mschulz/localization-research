@@ -1,8 +1,8 @@
 # Knowledge Base Index
 
-> Last updated: 2026-06-15  
-> Sources in raw/: 69  
-> Articles: 22 (all sources 1–74 now compiled or status-flagged)
+> Last updated: 2026-08-14  
+> Sources in raw/: 84 PDFs (83 content-bearing + 1 empty)  
+> Articles: 23 (sources 1–78 compiled or status-flagged; 2026-08-14 run added 4 compiled + 1 flagged)
 
 ## Articles
 
@@ -19,7 +19,8 @@
 | [[RADAR-WiFi-Fingerprinting]] | Bahl & Padmanabhan INFOCOM 2000 — foundational WiFi RSSI fingerprinting system. KNN nearest-neighbour in signal space; median ~2.94m accuracy; established the offline radio map + online NNSS paradigm. | active |
 | [[Horus-WLAN-System]] | Youssef & Agrawala MobiSys 2005 — probabilistic WiFi fingerprinting. Bayesian MAP inference over stored RSSI distributions; handles temporal autocorrelation and small-scale variation; median ~42cm, 89% better than RADAR. | active |
 | [[E-eyes-Device-Free-Localization]] | Wang et al. MobiCom 2014 — device-free activity recognition using WiFi CSI (per-OFDM-subcarrier). EMD classifier for in-place activities; MD-DTW for walking trajectories; >96% accuracy with single AP. | active |
-| [[WiFi-Fingerprinting-Advances]] | Synthesis of He & Chan (COMST 2016) and Khalajmehrabadi et al. (2016) surveys — advanced fingerprinting techniques: temporal/spatial patterns, collaborative localization, PDR fusion, sparse recovery, crowdsourcing, outlier detection, device heterogeneity. | active |
+| [[WiFi-Fingerprinting-Advances]] | Synthesis of He & Chan (COMST 2016) and Khalajmehrabadi et al. (2016) surveys — advanced fingerprinting techniques: temporal/spatial patterns, collaborative localization, PDR fusion, sparse recovery, crowdsourcing, outlier detection, device heterogeneity. Adds CHISEL (Wang et al. 2021 — compression-aware CAE+CNN; UJIIndoorLoc 6.95m; ~148KB embedded model) and FDP (Yang et al. 2024 — Convolutional Dictionary Learning radio-map preprocessing; ~28% compression; 41–48% accuracy gain). | active |
+| [[Compressive-Sensing-Localization]] | Compressive sensing / compressive sampling for localization. Tabibiazar & Basir (SMC 2011) recast WSN localization as ℓ₁ sparse recovery over a spatial grid; Balestrieri et al. (IEEE TIM 2020) use sub-Nyquist Non-Uniform Sampling wideband sensors for RF-emitter localization (~1m with 10 receivers, RMSE near CRLB up to CR=64). | active |
 | [[UnLoc-Unsupervised-Localization]] | Wang et al. MobiSys 2012 — zero-calibration indoor localization using automatically detected ambient landmarks (WiFi, magnetic, inertial) and dead-reckoning; SLAM-inspired; 1.69m median with no war-driving. | active |
 | [[Walkie-Markie-Indoor-Mapping]] | Shen et al. NSDI 2013 — crowdsourced indoor pathway map construction from WiFi-Mark (RSS trend reversal) landmarks; no floor plan required; 1.65m average localization using generated map. | active |
 | [[UWB-LSTM-Localization]] | Poulose & Han, Appl. Sci. 2020 — two-layer LSTM for UWB TOA-based indoor localization; 7cm mean error in MATLAB simulation; outperforms LLSE, MLE, WCE, RNN, ELM. | active |
@@ -108,3 +109,8 @@
 | `raw/Sci-Hub. Bluetooth indoor localization with multiple neural networks : IEEE 5th International Sympos.pdf` | Academic paper (Altini et al., ISSNIP 2010 — Bluetooth fingerprinting with per-orientation NNs) | ✅ compiled → [[Indoor-Localization-ML-Methods]] |
 | `raw/Sci-Hub. Design and Analysis of a Bluetooth-Based Indoor Localization System : Lecture Notes in Comp.pdf` | Academic paper (Bruno & Delmastro, 2003 — BIPS Bluetooth indoor positioning) | ✅ compiled → [[Indoor-Location-Sensor-Technologies]] |
 | `raw/Sci-Hub. Evaluation of the reliability of RSSI for indoor localization : 2012 International Conferen.pdf` | Academic paper (Dong & Dargie, ICWCUCA 2012 — empirical RSSI reliability evaluation) | ✅ compiled → [[RADAR-WiFi-Fingerprinting]] |
+| `raw/tabibiazar2011.pdf` | Academic paper (Tabibiazar & Basir, IEEE SMC 2011 — compressive sensing indoor localization; ℓ₁ sparse recovery over spatial grid; dictionary coherence) | 2026-08-14 ✅ → [[Compressive-Sensing-Localization]] |
+| `raw/balestrieri2020.pdf` | Academic paper (Balestrieri et al., IEEE TIM 2020 — compressive sampling for RF-emitter localization; wideband spectrum sensors + NUS; ~1m with 10 receivers) | 2026-08-14 ✅ → [[Compressive-Sensing-Localization]] |
+| `raw/2107.01192v1.pdf` | Academic paper (Wang, Tiku & Pasricha, arXiv 2021 — CHISEL compression-aware deep-learning WiFi fingerprinting; CAE+CNN; UJIIndoorLoc 6.95m; QAT/pruning to ~148KB) | 2026-08-14 ✅ → [[WiFi-Fingerprinting-Advances]] |
+| `raw/s41598-024-75306-3.pdf` | Academic paper (Yang et al., Scientific Reports 2024 — FDP fingerprint dictionary preprocessing via Convolutional Dictionary Learning; ~28% compression; 41–48% accuracy gain) | 2026-08-14 ✅ → [[WiFi-Fingerprinting-Advances]] |
+| `raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf` | LLM-generated review article (25 pages; TOC-style survey of localization taxonomy, Bayesian/ranging/CSI methods, SLAM/loop-closure, LiDAR). No primary citations. | ⚠️ NOT COMPILED — synthetic secondary source, unverifiable; cataloged only |

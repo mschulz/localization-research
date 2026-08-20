@@ -1,6 +1,7 @@
 ---
-tags: [WiFi, fingerprinting, indoor-localization, survey, crowdsourcing, collaborative-localization, sparse-recovery, deployment-challenges, semisupervised, trajectory-learning, node-placement]
+tags: [WiFi, fingerprinting, indoor-localization, survey, crowdsourcing, collaborative-localization, sparse-recovery, deployment-challenges, semisupervised, trajectory-learning, node-placement, deep-learning, model-compression, dictionary-learning, embedded]
 date-compiled: 2026-06-15
+updated: 2026-08-14
 source-files:
   - "raw/COMST16_IP.pdf"
   - "raw/1610.05424v1.pdf"
@@ -13,6 +14,8 @@ source-files:
   - "raw/Zero-Configuration, Robust Indoor Localization Theory and Experimentation.pdf"
   - "raw/601bbfbdb639558b07eb4aabffc00e184315.pdf"
   - "raw/Placement_optimization_positioning_nodes.pdf"
+  - "raw/2107.01192v1.pdf"
+  - "raw/s41598-024-75306-3.pdf"
 status: active
 ---
 
@@ -375,6 +378,29 @@ A methodology for **optimal deployment of wireless positioning nodes** (access p
 
 ---
 
+## Compression-Aware Deep Learning: CHISEL (Wang, Tiku & Pasricha, arXiv 2021)
+
+Wang, L., Tiku, S., Pasricha, S. *CHISEL: Compression-Aware High-Accuracy Embedded Indoor Localization with Deep Learning.* arXiv:2107.01192v1, 2021 (Colorado State University). Source: `raw/2107.01192v1.pdf` (4 pages, fully text-extractable).
+
+CHISEL targets a deployment gap: most deep-learning WiFi-fingerprinting models are too large for **resource-limited embedded devices**. It combines a **Convolutional Autoencoder (CAE)** for feature learning with a **CNN classifier**, and is explicitly **compression-aware** — designed so that the model can be shrunk without notable accuracy loss.
+
+- **Pipeline**: RSSI fingerprints from reference points are normalized and reshaped into **24×24×1 fingerprint "images"**; data augmentation improves generalization; the CAE learns features (MSE reconstruction loss) and the CNN predicts building/floor/location.
+- **Model / compression**: Full model has **171,209 parameters (~801 KB uncompressed)**. Quantization-Aware Training (QAT) plus weight pruning shrinks it to **~148 KB (≈81% size reduction)**; latency drops ~31% (e.g. 80 ms, a 30.93% reduction). Aggressive settings (e.g. INT2-WA + 75% sparsity) degrade accuracy up to ~3×, illustrating the accuracy/size/latency trade-off.
+- **Accuracy**: Evaluated on the **UJIIndoorLoc** dataset (3 buildings, 5 floors; 1,111 validation samples used as test set). Near-**100% building/floor** accuracy; **~6.95 m** average localization error with data augmentation (CHISEL-DA); reported improvements of ~**2.63 m (38%)** in positioning error over prior stacked-autoencoder (SAE) and 1D-CNN works. Outperforms best-known works while remaining compressible.
+- **Relevance**: A concrete answer to the **Heterogeneous Devices / deployability** challenge above, and a bridge to embedded/IoT localization on microcontrollers. Model compression parallels the data-compression idea in FDP (below) and the sparsity theme of [[Compressive-Sensing-Localization]].
+
+## Convolutional Dictionary Learning for Radio-Map Preprocessing: FDP (Yang et al., Sci. Reports 2024)
+
+Yang, J., Wang, Y., Cheng, W., Liu, Y., Lu, J., Wu, J., Qin, S., Han, G. *A fingerprint dictionary processing approach in indoor localization system based on wi-fi.* Scientific Reports 14, 2024. Source: `raw/s41598-024-75306-3.pdf` (17 pages, fully text-extractable).
+
+FDP (**Fingerprint Dictionary Preprocessing**) shifts attention from the online matching phase (where most work concentrates) to **offline radio-map preprocessing**, arguing that noisy/interfered training fingerprints cap overall accuracy. It applies **Convolutional Dictionary Learning (CDL)** — an extension of dictionary learning / sparse representation — to process the RSS data at each reference point.
+
+- **Method**: CDL learns a set of **convolutional kernels** that capture site characteristics, representing AP RSS values sparsely. The learned dictionary supports (i) **anomaly detection / denoising** of the radio map, and (ii) **compression** of the fingerprint database via sparse coding. In the online phase, the target fingerprint is matched by **dictionary coding** — expressing it as a sparse linear combination of dictionary elements — to find the optimal location.
+- **Results**: Compressed fingerprint data reduced by **~28.1%** (compression ratio reported as 63.36%; ~35 KB); localization-accuracy improvements ranging **~41–48%** (e.g. 41.48% overall enhancement over classical processing; per-scenario 43.5%, 46%, 48.0%, 34%) versus classic radio-map upgrade models (e.g. LAAFU).
+- **Relevance**: Directly strengthens the **Radio Map Construction** and **Sparsity-Based Localization** themes above, and is methodologically adjacent to the compressive-sensing dictionary machinery in [[Compressive-Sensing-Localization]] (both use a learned/sparsifying dictionary Ψ and ℓ₁-style sparse coding).
+
+---
+
 ## References
 
 | # | Reference | Priority | In raw/ |
@@ -393,6 +419,8 @@ A methodology for **optimal deployment of wireless positioning nodes** (access p
 | He & Chan [23] | Xiong, J. et al. *ArrayTrack: A Fine-Grained Indoor Location System.* NSDI 2013. | High — collaborative PA | — |
 | Yoo & Park 2019 | Yoo, J., Park, J. *Indoor Localization: Feature Extraction, Mobile Fingerprinting, Trajectory Learning.* Appl. Sci. 2019, 9(18), 3930. | High — semisupervised site survey; trajectory learning | ✅ `raw/601bbfbdb639558b07eb4aabffc00e184315.pdf` |
 | Xenakis et al. 2019 | Xenakis, D. et al. *Placement Optimization of Positioning Nodes.* ISPRS Geospatial Week 2019. | Medium — GA-based AP placement; zone distinction metric | ✅ `raw/Placement_optimization_positioning_nodes.pdf` |
+| Wang, Tiku & Pasricha 2021 | Wang, L., Tiku, S., Pasricha, S. *CHISEL: Compression-Aware High-Accuracy Embedded Indoor Localization with Deep Learning.* arXiv:2107.01192, 2021. | High — CAE+CNN; QAT/pruning; UJIIndoorLoc 6.95m; embedded deployability | ✅ `raw/2107.01192v1.pdf` |
+| Yang et al. 2024 | Yang, J. et al. *A fingerprint dictionary processing approach in indoor localization system based on wi-fi.* Scientific Reports 14, 2024. | High — Convolutional Dictionary Learning radio-map preprocessing; 28% compression; 41–48% accuracy gain | ✅ `raw/s41598-024-75306-3.pdf` |
 
 ## Relationships
 
@@ -411,3 +439,5 @@ A methodology for **optimal deployment of wireless positioning nodes** (access p
 - [[CSI-Indoor-Localization]] — WiDeep (Abbas et al.) explicitly mentions CSI-based systems as a related category; WiDeep achieves comparable accuracy using only standard RSSI on commodity devices
 - [[Indoor-Localization-ML-Methods]] — Yoo & Park's semisupervised + particle filter + GP framework is closely related to the trajectory and filter-based methods surveyed there; Xenakis placement optimisation is addressed in the ML survey's "deployment challenges" discussion
 - [[Pedestrian-Dead-Reckoning]] — Yoo & Park's trajectory learning and H-P filter approach complements IMU-based dead reckoning for mapless localization
+- [[Compressive-Sensing-Localization]] — dedicated article on compressive sensing/sampling for localization; the "Sparsity-Based Localization" section here and the FDP dictionary-learning method share its ℓ₁/sparse-dictionary machinery
+- [[Indoor-Location-Sensor-Technologies]] — CHISEL's ~148 KB compressed model targets embedded/IoT devices (ESP-class microcontrollers) catalogued there
