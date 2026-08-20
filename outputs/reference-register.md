@@ -392,57 +392,82 @@ Priyantha, N.B., Chakraborty, A., Balakrishnan, H. *The Cricket Location-Support
 
 ---
 
-## Source 21: Liu et al. — Tensor-based radio map sparsification (2016)
+## Source 21: Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf
 
-Liu, W. et al. *Tensor-based radio map sparsification for crowdsourced indoor positioning.* 2016. → [[WiFi-Fingerprinting-Advances]]
+Liu, X.-Y., Aeron, S., Aggarwal, V., Wang, X., Wu, M.-Y. *Adaptive Sampling of RF Fingerprints for Fine-grained Indoor Localization.* IEEE Transactions on Network Science and Engineering, 2016. arXiv:1508.02324v2 [cs.IT]. → [[WiFi-Fingerprinting-Advances]]
 
-*(Reference list not fully extracted; tensor completion methodology paper)*
+**Source file**: `raw/Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 16).**
+**Compiled**: ✅ (attribution corrected 2026-08-20)
+
+*(Fingerprint dataset treated as a 3-D tensor (x, y, AP-index) with exploitable low-dimensional structure; adaptive **tubal-sampling** identifies the most informative reference points. Reported 71% sample reduction at high SNR, 55% at low SNR, with bounded recovery error under incoherency conditions. Its stated limitation — scalar RSS only, computationally prohibitive on high-dimensional CSI — is the gap Source 81 sets out to close.)*
+
+> **Attribution corrected 2026-08-20.** This entry previously read "Liu, W. et al. — *Tensor-based radio map sparsification for crowdsourced indoor positioning*", which is neither the paper's title nor its first author, and it carried no filename — so the file it describes was unidentifiable from this register and appeared to be missing an entry entirely. Both the title and the author initial came from a weak-metadata record rather than the PDF.
 
 ---
 
-## Source 22: Tan et al. — Weighted nuclear norm minimization (2020)
+## Source 22: Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf
 
-Tan, X. et al. *Weighted nuclear norm minimization for radio map construction.* 2020. → [[WiFi-Fingerprinting-Advances]]
+Tan, T., Zhang, L., Li, Q. *An Efficient Fingerprint Database Construction Approach Based on Matrix Completion for Indoor Localization.* IEEE Access, published 15 July 2020. DOI: 10.1109/ACCESS.2020.3009441. Beijing Jiaotong University. → [[WiFi-Fingerprinting-Advances]]
+
+**Source file**: `raw/Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 11).**
+**Compiled**: ✅ (attribution corrected 2026-08-20 — was recorded as "Tan, X. et al., *Weighted nuclear norm minimization for radio map construction*", a paraphrase of the method rather than the paper's title, with no filename)
 
 *(Reference list not fully extracted; matrix completion methodology paper)*
 
 ---
 
-## Source 23: Wang et al. — Fast low-rank matrix recovery (2021)
+## Source 23: fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf
 
-Wang, X. et al. *Fast low-rank matrix recovery for indoor radio map construction.* 2021. → [[WiFi-Fingerprinting-Advances]]
+Wang, Z., Zhang, L., Kong, Q., Wang, K. *Fast Construction of the Radio Map Based on the Improved Low-Rank Matrix Completion and Recovery Method for an Indoor Positioning System.* Journal of Sensors (Hindawi), vol. 2021, Article ID 2017208, 12 pages. DOI: 10.1155/2021/2017208. Shandong University of Technology. → [[WiFi-Fingerprinting-Advances]]
 
-*(Reference list not fully extracted; matrix recovery methodology paper)*
+**Source file**: `raw/fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf` (12 pages, complete, fully text-extractable).
+**Compiled**: ✅ (attribution corrected 2026-08-20 — was "Wang, X. et al., *Fast low-rank matrix recovery for indoor radio map construction*", wrong first initial and a paraphrased title, with no filename)
+
+*(Low-rank matrix completion to fill a sparsely-surveyed radio map, plus an explicit **low-rank matrix recovery** denoising step; an F-parameter stabilises the optimisation. Workflow: sparse evenly-spaced reference points → partial radio map → completion → noise removal → standard KNN/probabilistic localization.)*
+
+🔁 **A second copy of this article is on disk**: `raw/Wang et al. - 2021 - Fast Construction of the Radio Map Based on the Im.pdf`, a 1-page capture (page 1 of 12) with a different MD5. This entry points at the **complete** copy; keep both per the corpus's tolerance for duplicate acquisitions, and prefer this one for any recompilation.
 
 ---
 
-## Source 24: Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset
+## Source 24: Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf
 
-Quezada-Gaibor, D. et al. *Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.* → [[WiFi-Fingerprinting-Advances]]
+Quezada-Gaibor, D., Klus, L., Torres-Sospedra, J., Lohan, E.S., Nurmi, J., Granell, C., Huerta, J. *Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Datasets.* arXiv:2205.02096v1 [eess.SP], 4 May 2022. Universitat Jaume I / Tampere University / Universidade do Minho. → [[WiFi-Fingerprinting-Advances]]
+
+**Source file**: `raw/Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 6).** Note the file name is singular where the paper's title is plural ("Datasets").
+**Compiled**: ✅ (filename and full author list added 2026-08-20)
 
 *(Reference list not fully extracted; data quality paper)*
 
 ---
 
-## Source 25: Barsocchi et al. — Multisource and Multivariate Dataset (IPIN 2016)
+## Source 25: Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf
 
-Barsocchi, P., Crivello, A., La Rosa, D., Palumbo, F. *A Multisource and Multivariate Dataset for Indoor Localization Methods Based on WLAN and Geo-magnetic Field Fingerprinting.* IPIN 2016. ISTI-CNR, Pisa. → [[Indoor-IPS-Datasets]]
+Barsocchi, P., Crivello, A., La Rosa, D., Palumbo, F. *A Multisource and Multivariate Dataset for Indoor Localization Methods Based on WLAN and Geo-magnetic Field Fingerprinting.* International Conference on Indoor Positioning and Indoor Navigation (IPIN), 4–7 October 2016, Alcalá de Henares, Spain. ISTI-CNR, Pisa; University of Siena. → [[Indoor-IPS-Datasets]]
+
+**Source file**: `raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 8).**
+**Compiled**: ✅ (filename added 2026-08-20)
 
 *(Dataset paper; references are methodological comparators — not listed here)*
 
 ---
 
-## Source 26: Toth & Tamas — Miskolc IIS Hybrid IPS Dataset (2016)
+## Source 26: Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor.pdf
 
-Tóth, Z., Tamás, J. *Miskolc IIS Hybrid IPS: Dataset for Hybrid Indoor Positioning.* Radioelektronika 2016. University of Miskolc. → [[Indoor-IPS-Datasets]]
+Tóth, Z., Tamás, J. *Miskolc IIS Hybrid IPS: Dataset for Hybrid Indoor Positioning.* 26th Conference Radioelektronika, 19–20 April 2016, Košice, Slovak Republic. Institute of Information Science, University of Miskolc, Hungary. → [[Indoor-IPS-Datasets]]
+
+**Source file**: `raw/Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 5).**
+**Compiled**: ✅ (filename and venue detail added 2026-08-20)
 
 *(Dataset paper; limited reference list)*
 
 ---
 
-## Source 27: Alhomayani & Mahoor — Oversampling Highly Imbalanced Indoor Positioning Data (IEEE SENSORS 2021)
+## Source 27: Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf
 
-Alhomayani, F., Mahoor, M.H. *Oversampling Highly Imbalanced Indoor Positioning Data using Deep Generative Models.* IEEE SENSORS 2021. University of Denver. → [[Indoor-IPS-Datasets]], [[Indoor-Localization-ML-Methods]]
+Alhomayani, F., Mahoor, M.H. *Oversampling Highly Imbalanced Indoor Positioning Data using Deep Generative Models.* IEEE SENSORS 2021. arXiv:2108.13503v1 [eess.SP], 30 Aug 2021. Department of Electrical and Computer Engineering, University of Denver. → [[Indoor-IPS-Datasets]], [[Indoor-Localization-ML-Methods]]
+
+**Source file**: `raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 4).**
+**Compiled**: ✅ (filename and arXiv id added 2026-08-20)
 
 | # | Reference | In raw/ |
 |---|---|---|
@@ -471,17 +496,23 @@ Alsinglawi, B., Nguyen, Q.V., Simoff, S., Ghinea, G., Maher, M. *RFID Localisati
 
 ---
 
-## Source 30: Xiao et al. — A Survey on Wireless Indoor Localization from the Device Perspective (ACM CSUR 2016)
+## Source 30: Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf
 
-Xiao, J., Zhou, Z., Yi, Y., Ni, L.M. *A Survey on Wireless Indoor Localization from the Device Perspective.* ACM Computing Surveys (CSUR), 2016. HKUST. 31 pages. → [[Indoor-Location-Sensor-Technologies]]
+Xiao, J., Zhou, Z., Yi, Y., Ni, L.M. *A Survey on Wireless Indoor Localization from the Device Perspective.* ACM Computing Surveys (CSUR), 2016. Hong Kong University of Science and Technology; University of Macau. → [[Indoor-Location-Sensor-Technologies]]
+
+**Source file**: `raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 31).** The previous entry recorded "31 pages", which is the published survey's length, not what is on disk — a distinction that matters before anyone tries to compile from it.
+**Compiled**: ✅ (filename added and page claim corrected 2026-08-20)
 
 *(Comprehensive survey; references span the full IPS literature — not individually listed here due to volume)*
 
 ---
 
-## Source 31: Almalioglu et al. — Milli-RIO (IEEE SENSORS 2020)
+## Source 31: Almalioglu et al_2020_Milli-RIO.pdf
 
-Almalioglu, Y., Turan, M., Trigoni, N., Markham, A. *Milli-RIO: Ego-Motion Estimation with Low-Cost Millimetre-Wave Radar.* IEEE SENSORS Journal, 2020. University of Oxford. arXiv:1909.05774. → [[Indoor-Location-Sensor-Technologies]]
+Almalioglu, Y., Turan, M., Lu, C.X., Trigoni, N., Markham, A. *Milli-RIO: Ego-Motion Estimation with Low-Cost Millimetre-Wave Radar.* IEEE Sensors Journal, 2020. arXiv:1909.05774v2 [eess.SP], 6 Mar 2020. University of Oxford. → [[Indoor-Location-Sensor-Technologies]]
+
+**Source file**: `raw/Almalioglu et al_2020_Milli-RIO.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 9).**
+**Compiled**: ✅ (filename added and co-author Chris Xiaoxuan Lu restored 2026-08-20)
 
 | # | Reference | In raw/ |
 |---|---|---|
@@ -490,9 +521,12 @@ Almalioglu, Y., Turan, M., Trigoni, N., Markham, A. *Milli-RIO: Ego-Motion Estim
 
 ---
 
-## Source 32: Papaioannou et al. — Tracking People in Highly Dynamic Industrial Environments (IEEE TMC 2017)
+## Source 32: Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf
 
-Papaioannou, S. et al. *Tracking People in Highly Dynamic Industrial Environments.* IEEE Transactions on Mobile Computing, 2017. DOI: 10.1109/TMC.2016.2613523. → [[Indoor-Location-Sensor-Technologies]], [[Indoor-Localization-Applications-by-Sector]]
+Papaioannou, S., Markham, A., Trigoni, N. *Tracking People in Highly Dynamic Industrial Environments.* IEEE Transactions on Mobile Computing, 2017. DOI: 10.1109/TMC.2016.2613523. → [[Indoor-Location-Sensor-Technologies]], [[Indoor-Localization-Applications-by-Sector]]
+
+**Source file**: `raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 14).**
+**Compiled**: ✅ (filename and full author list added 2026-08-20)
 
 | # | Reference | In raw/ |
 |---|---|---|
@@ -554,7 +588,10 @@ Ouyang, G. & Abed-Meraim, K. *A Survey of Magnetic Field Based Indoor Localizati
 ## Source 38: CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf
 Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-Based Indoor Localization.* IEEE Transactions on Parallel and Distributed Systems, Vol. 24, No. 7, July 2013. DOI: 10.1109/TPDS.2012.214. HKUST / Sun Yat-sen University. → [[CSI-Indoor-Localization]]
 
+**Source file**: `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — ⚠️ **PARTIAL: 1-page capture (page 1 of 11).**
 ✅ **Compiled** — Full paper text sourced from Academia.edu (2026-06-15). Article substantially expanded with complete system description, equations, and experimental results.
+
+🔁 **The complete 11-page paper has been in `raw/` all along**, as `raw/CSI_based_Indoor_Localization.pdf` — registered at Source 83. It was unregistered until 2026-08-20, which is why the 2026-06-15 compilation went to Academia.edu for a full text that was already on disk. **Prefer Source 83 for any recompilation.**
 
 *(FILA system: CSI-based propagation model + fingerprinting; CSI_eff weighted average of 30 subcarrier groups; time-domain IFFT multipath mitigation; refined path loss model d = f(CSI_eff, σ, n); Bayesian fingerprinting with Pearson correlation prior; Intel iwl5300 NIC; median 0.45m single room / 1.07–1.2m multi-room; 24–25% over Horus; tracking latency 0.01s)*
 
@@ -954,13 +991,46 @@ Lu, S., Zhang, J., Ma, X., Kan, C. *Efficient Kernel Based 3-D Source Localizati
 
 ---
 
-## Register coverage gap (noted 2026-08-20)
+## Source 83: CSI_based_Indoor_Localization.pdf
 
-**11 of the 66 sources declared in article `source-files:` have no entry in this register.** Found while compiling Sources 80–82, and left unfixed deliberately: closing it means opening each PDF to attribute it properly, and at least one case needs a *merge* rather than an addition — Source 21 ("Liu, W. et al. — Tensor-based radio map sparsification", flagged there as having an incompletely extracted reference list) looks like a weak-metadata record of the same file the article cites as Liu, X.-Y. et al., *Adaptive Sampling of RF Fingerprints* (IEEE TNSE 2016). Guessing at that would make the register less trustworthy, not more.
+Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-based Indoor Localization.* IEEE Transactions on Parallel and Distributed Systems, Vol. 24, No. 7, July 2013 (accepted 2012). DOI: 10.1109/TPDS.2012.214. HKUST / Sun Yat-sen University. → [[CSI-Indoor-Localization]]
 
-The 11: `Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf`, `Almalioglu et al_2020_Milli-RIO.pdf`, `Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf`, `CSI_based_Indoor_Localization.pdf`, `Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf`, `Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf`, `Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf`, `Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf`, `Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor.pdf`, `Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf`, `fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf`.
+**Source file**: `raw/CSI_based_Indoor_Localization.pdf` (**11 pages, complete**, fully text-extractable).
+**Compiled**: ✅ — registered 2026-08-20.
 
-**Note also:** this register's repo-relative source links (`[…](../raw/…)`) were dead as of the 2026-08-20 relocation — `../raw/` no longer exists, since `raw/` moved to the Dropbox library. The 5 affected entries now carry a plain code-formatted filename citation, which `CLAUDE.md` defines relative to the library root. **Do not reintroduce repo-relative links to `raw/`.**
+🔁 **Second copy of Source 38, and the better one.** Source 38's file is a 1-page capture of the same paper; this is the full text. Registered separately rather than merged because they are distinct files with distinct MD5s, and the corpus tolerates duplicate acquisitions where both are recorded — see the Aziz & Koo pair. The lesson is in Source 38's note: a full text sitting in `raw/` under an unregistered filename sent a compilation run to the open web for something it already had.
+
+---
+
+## Register coverage — repaired 2026-08-20
+
+**The gap noted earlier the same day was misdiagnosed, and the correction matters more than the original claim.** The note said 11 of the 66 sources declared in article frontmatter "have no entry in this register". They all had entries. The detection tested whether each *filename* appeared in the register, and this register's convention is that a `## Source N:` heading **is** the filename — so 10 entries that identified their paper by author and title, with no filename anywhere in the entry, registered as absent.
+
+**Lesson, and it is the same one this corpus keeps learning:** a check that tests for one representation of a thing will report every other representation as missing. Ask what the record *is*, not whether one spelling of it appears.
+
+What was actually wrong, now fixed:
+
+- **10 entries named a paper but not its file** — Sources 21, 22, 23, 24, 25, 26, 27, 30, 31, 32. All now carry a `**Source file**:` line, and their headings follow the register's filename convention.
+- **3 of those 10 were mis-attributed**, which is why they looked like different papers than the ones on disk:
+  - **Source 21** was "Liu, W. et al. — *Tensor-based radio map sparsification for crowdsourced indoor positioning*". It is Liu, **X.-Y.**, Aeron, Aggarwal, Wang & Wu, *Adaptive Sampling of RF Fingerprints for Fine-grained Indoor Localization* (arXiv:1508.02324v2). Wrong author initial, wrong title.
+  - **Source 22** was "Tan, X. et al. — *Weighted nuclear norm minimization*", a paraphrase of the method. It is Tan, **T.**, Zhang & Li, *An Efficient Fingerprint Database Construction Approach Based on Matrix Completion*, IEEE Access 2020.
+  - **Source 23** was "Wang, X. et al. — *Fast low-rank matrix recovery*". It is Wang, **Z.**, Zhang, Kong & Wang, Hindawi J. Sensors 2021, Article ID 2017208.
+- **1 file was a genuinely unregistered duplicate** — `CSI_based_Indoor_Localization.pdf`, now **Source 83**.
+
+**Numbering note:** entries run 1–83 with **no Source 34**. That number belonged to `raw/fingerprint thesis.pdf`, a 1-page Zotero title-page placeholder deleted in June 2026 and superseded by Source 36 (the full Kaemarungsi thesis); `health-check-2026-06-14b.md` records the removal. The gap is deliberate — renumbering would invalidate every citation of a higher-numbered source, including the ones in `_index.md` and the articles.
+
+## Provenance warning: nine sources are 1-page captures
+
+Checked page-by-page on 2026-08-20. **Nine of the eleven files above hold only page 1** of papers that run 4, 5, 6, 8, 9, 11, 14, 16 and 31 pages: Sources 21, 22, 24, 25, 26, 27, 30, 31, 32. They are viewer prints — each carries a "Create an annotation to see it in the sidebar" artifact — so whatever those articles say about method detail, results or evaluation came from an abstract and a first page, not a full text. Every one is now marked ⚠️ **PARTIAL** with its true page count.
+
+**Two of them did not need to be partial, because the full paper was already on disk under a different filename:**
+
+| Paper | Partial copy | Complete copy |
+|---|---|---|
+| Wu et al., *CSI-based Indoor Localization* (FILA) | Source 38, 1 of 11 pp | **Source 83**, 11 pp |
+| Wang et al., Hindawi J. Sensors 2021 Art. 2017208 | `Wang et al. - 2021 - Fast Construction…pdf`, 1 of 12 pp | **Source 23**, 12 pp |
+
+The FILA case is the instructive one: the 2026-06-15 run went to Academia.edu for a full text that was sitting in `raw/` unregistered. **Duplicate acquisitions are not always redundant — check which copy is complete before compiling.** Recompiling Sources 21–32 from full texts, where they can be obtained, is the highest-value follow-up this register can point at.
 
 ---
 
