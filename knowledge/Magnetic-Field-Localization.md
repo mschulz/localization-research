@@ -200,7 +200,7 @@ The survey dedicates Section 9 to smartphone-based [[Pedestrian-Dead-Reckoning]]
 | [OuY22] | Ouyang & Abed-Meraim, *Electronics* 2022, 11, 864 — **primary source** | ✅ `raw/electronics-11-00864.pdf` |
 | [UnLoc] | Wang et al., MobiSys 2012 — UnLoc (magnetic + WiFi + IMU landmarks) | ✅ `raw/unloc.pdf` |
 | [PDR] | Woodman, Cambridge PhD 2010 — PDR + ZUPT + WiFi | ✅ `raw/ojw28_thesis.pdf` |
-| [Barsocchi16] | Barsocchi et al., IPIN 2016 — WiFi+magnetic+IMU dataset | ✅ `raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor .pdf \| My Library \| Zote.pdf` |
+| [Barsocchi16] | Barsocchi et al., IPIN 2016 — WiFi+magnetic+IMU dataset | ✅ `raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf` |
 
 ## Relationships
 

@@ -193,7 +193,7 @@ While RADAR treats RSSI fingerprinting as reliable when measured at known locati
 | [Hod97] | Hodes, T. et al. *Composable Ad Hoc Mobile Services for Universal Interaction.* MobiCom 1997. | Medium — baseline comparison | — |
 | [Kae04a] | Kaemarungsi, K. & Krishnamurthy, P. *Modeling of Indoor Positioning Systems Based on Location Fingerprinting.* IEEE INFOCOM 2004. | ⭐ High — first analytical model for NNSS | ✅ `raw/Kaemarungsi 2004.pdf` |
 | [Kae05] | Kaemarungsi, K. *Design of Indoor Positioning Systems Based on Location Fingerprinting Technique.* PhD Thesis, University of Pittsburgh, 2005. 193 pages. | ⭐ High — full design framework | ✅ `raw/p-0012--DESIGN_OF_INDOOR_POSITIONING_SYSTEMS.pdf` |
-| [KaeOld] | Kaemarungsi, K. PhD Thesis (Zotero snapshot). ⚠️ 1-page Zotero title-page placeholder only — not the full thesis | — | `raw/fingerprint thesis.pdf` (do not use) |
+| [KaeOld] | Kaemarungsi, K. PhD Thesis (Zotero snapshot). ⚠️ Was a 1-page Zotero title-page placeholder, never the full thesis; the file was removed from `raw/` in June 2026 and is not coming back. Superseded entirely by [Kae05] above. | — | *no file — historical note only* |
 
 ## Relationships
 
