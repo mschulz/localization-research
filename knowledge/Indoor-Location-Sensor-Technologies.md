@@ -138,6 +138,8 @@ The number, thickness, and material of obstacles determines the severity of NLOS
 
 ### Bluetooth / iBeacons (BLE)
 
+> **Bluetooth 5.1 added direction finding (AoA/AoD)**, which changes what this technology can do — angles instead of distance-only, triangulation alongside trilateration, and a claimed path to centimetre-level for asset tracking. Mechanism, deployment topologies and the caveats: [[Bluetooth-Direction-Finding]].
+
 - **Signal**: RSSI
 - **Accuracy**: 1–3m typical; sub-metre with advanced methods
 - **Pros**: Low power; widespread in mobile devices; iBeacons provide simple infrastructure

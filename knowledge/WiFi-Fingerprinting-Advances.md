@@ -1,7 +1,7 @@
 ---
-tags: [WiFi, fingerprinting, indoor-localization, survey, crowdsourcing, collaborative-localization, sparse-recovery, deployment-challenges, semisupervised, trajectory-learning, node-placement, deep-learning, model-compression, dictionary-learning, embedded]
+tags: [WiFi, fingerprinting, indoor-localization, survey, crowdsourcing, collaborative-localization, sparse-recovery, deployment-challenges, semisupervised, trajectory-learning, node-placement, deep-learning, model-compression, dictionary-learning, embedded, Kriging, geostatistics, adaptive-sampling, CSI, channel-covariance, GPR, WKNN]
 date-compiled: 2026-06-15
-updated: 2026-08-14
+updated: 2026-08-20
 source-files:
   - "raw/COMST16_IP.pdf"
   - "raw/1610.05424v1.pdf"
@@ -10,6 +10,7 @@ source-files:
   - "raw/fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf"
   - "raw/Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf"
   - "raw/A comparison of deterministic and probabilistic methods for indoor localization - Journal o.pdf"
+  - "raw/Adaptive_Sampling_for_Fingerprinting_Localization.pdf"
   - "raw/WiDeep - WiFi-based Accurate and Robust Indoor Localization System using Deep Learning - 201.pdf"
   - "raw/Zero-Configuration, Robust Indoor Localization Theory and Experimentation.pdf"
   - "raw/601bbfbdb639558b07eb4aabffc00e184315.pdf"
@@ -185,7 +186,7 @@ Khalajmehrabadi ran a controlled evaluation at UTSA on the same fingerprint data
 
 ## Radio Map Construction: Sparse Sampling and Matrix Completion
 
-A major practical bottleneck in WiFi fingerprinting is the **offline site survey** — a surveyor must collect RSS measurements at every reference point, which is labour-intensive and must be repeated whenever the environment changes. Four papers in this batch address this directly:
+A major practical bottleneck in WiFi fingerprinting is the **offline site survey** — a surveyor must collect RSS measurements at every reference point, which is labour-intensive and must be repeated whenever the environment changes. Five papers compiled here address this directly, and they split into two strategies: **complete what you did not measure** (Tan, Wang, and the matrix-completion family) and **choose what to measure** (Liu, and Li et al. below).
 
 ### Adaptive Sampling via Tensor Completion (Liu et al., 2016)
 
@@ -200,6 +201,39 @@ Key results:
 - Provably achieves bounded recovery error under incoherency conditions
 
 Compared to random sampling (the standard baseline for compressed sensing), adaptive sampling achieves significantly better localization accuracy for the same number of survey points.
+
+### Kriging-Guided Batch Adaptive Sampling for CSI Radio Maps (Li, Al-Tous & Tirkkonen, 2026)
+
+Li, X., Al-Tous, H., Tirkkonen, O. *Adaptive Sampling for Fingerprinting Localization.* Proc. IEEE Vehicular Technology Conference (VTC2025-Fall), published 06/01/2026. DOI: 10.1109/VTC2025-Fall65116.2025.11310680. Aalto University. Source: `raw/Adaptive_Sampling_for_Fingerprinting_Localization.pdf` (8 pages, accepted-manuscript version).
+
+**This paper's stated gap is the limitation of Liu et al. above.** Adaptive tubal-sampling works on RSS, a scalar per AP; it does not generalise to **high-dimensional CSI features**, where it becomes computationally prohibitive. The same objection is raised against Bayesian-optimization acquisition functions (designed for scalar objectives) and maximum-entropy batch sampling (complexity, even for scalar features). Their answer is geostatistics rather than tensor algebra.
+
+**The reframing that carries the idea.** Fingerprint localization is a mapping Γ_L : z ↦ (x, σ²ₓ) from feature to location plus uncertainty. A large output variance says the database cannot predict this location well — so that point should be measured next. But you can only evaluate Γ_L where you have already measured. So they invert it into **radio mapping**, Γ_RM : x ↦ (z, σ²_z), predicting the *feature* and its uncertainty at any location from a landmark set. That inversion is what allows uncertainty analysis **before** data acquisition rather than after.
+
+Machinery:
+- **Feature**: per-BS channel covariance R (averaging out small-scale fading), transformed to a **log-covariance** feature via eigendecomposition, then flattened and concatenated across B base stations — length F = B·M².
+- **Interpolation**: **Kriging** over the 2-D coverage area, with a bounded-linear semivariogram fitted each iteration (sill c, range a). Kriging supplies both an estimate and a **prediction variance**, which is the natural uncertainty measure.
+- **Batch selection**: cluster the 2-D grid (α = 20 clusters), then add β = 15 high-variance points per iteration, from U_init = 50 up to U_max = 300 or 1000. Batching is what keeps it cheaper than one-point-at-a-time adaptive sampling.
+- **Matchers**: **GPR** and **WKNN** (K = 5, exponential weighting) rather than a DNN — deliberately, because DNN fingerprinting degrades in exactly the small-dataset regime this method targets.
+
+Results (Table III), against uniformly random sampling:
+
+| Matcher | Points | Sampling | RMSE |
+|---|---|---|---|
+| WKNN | 300 | Batch adaptive | **0.26 m** |
+| WKNN | 300 | Single adaptive | 0.25 m |
+| WKNN | 300 | Random | 0.40 m |
+| WKNN | 1000 | Batch adaptive | 0.18 m |
+| WKNN | 1000 | Random | 0.24 m |
+| GPR | 300 | Batch adaptive | **0.36 m** |
+| GPR | 300 | Random | 0.48 m |
+
+- **35% RMSE reduction** for WKNN at ~300 training points (0.40 → 0.26 m); GPR improves 0.48 → 0.36 m.
+- **300 adaptively-sampled points match 1000 random ones** for WKNN (0.26 vs 0.24 m) — the "70% fewer training points" claim.
+- Batch adaptive ≈ single-point adaptive on accuracy (0.26 vs 0.25 m) but faster, which is the practical argument for batching.
+- Semivariogram parameters stabilise after ~300 samples, giving an independent signal that the campaign has converged.
+
+**Scope caveats, and they matter for reading this article.** This is a **cellular** study, not WiFi: 4 base stations with 8-element ULAs at 3.5 GHz, 30 kHz subcarrier spacing, 10 MHz bandwidth, 20 dBm transmit power. It is **simulation only** — synthetic channels from the **QuaDRiGa** simulator under the 3GPP TR 38.901 **InF-SL** (indoor factory, sparse, low) NLoS scenario, 2000 UEs on a 0.4 m grid, UE moving at 5 km/h with S = 50 snapshots 0.5 ms apart. No measured data, no hardware. Kriging's O(n³) matrix inversion is acknowledged and dismissed as offline-affordable since sampling and computation proceed concurrently. The method is presented in 2-D with 3-D described as a straightforward extension — not demonstrated.
 
 ### Matrix Completion for Fingerprint Database Construction (Tan et al., 2020)
 
@@ -439,5 +473,6 @@ FDP (**Fingerprint Dictionary Preprocessing**) shifts attention from the online 
 - [[CSI-Indoor-Localization]] — WiDeep (Abbas et al.) explicitly mentions CSI-based systems as a related category; WiDeep achieves comparable accuracy using only standard RSSI on commodity devices
 - [[Indoor-Localization-ML-Methods]] — Yoo & Park's semisupervised + particle filter + GP framework is closely related to the trajectory and filter-based methods surveyed there; Xenakis placement optimisation is addressed in the ML survey's "deployment challenges" discussion
 - [[Pedestrian-Dead-Reckoning]] — Yoo & Park's trajectory learning and H-P filter approach complements IMU-based dead reckoning for mapless localization
-- [[Compressive-Sensing-Localization]] — dedicated article on compressive sensing/sampling for localization; the "Sparsity-Based Localization" section here and the FDP dictionary-learning method share its ℓ₁/sparse-dictionary machinery
+- [[Compressive-Sensing-Localization]] — dedicated article on compressive sensing/sampling for localization; the "Sparsity-Based Localization" section here and the FDP dictionary-learning method share its ℓ₁/sparse-dictionary machinery. Lu et al. (2019), compiled there, apply tensor completion to a *randomly* subsampled 3-D grid and report it falling below plain interpolation at low sampling rates — the failure mode that Li et al.'s informed sampling is designed to avoid
+- [[CSI-Indoor-Localization]] — Li et al. work on channel-covariance/CSI features rather than RSS, so the feature engineering there is the closer neighbour than the RSS fingerprinting most of this article covers
 - [[Indoor-Location-Sensor-Technologies]] — CHISEL's ~148 KB compressed model targets embedded/IoT devices (ESP-class microcontrollers) catalogued there

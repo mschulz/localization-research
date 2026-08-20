@@ -180,12 +180,14 @@ Bluetooth 5.1 introduced native **Angle of Arrival (AoA)** support, enabling dir
 
 This partially addresses the long-standing weakness of BLE (1–3m RSSI-only accuracy) noted in [[Indoor-Location-Sensor-Technologies]].
 
+See [[Bluetooth-Direction-Finding]] for the mechanism and the standards framing — the **angle-of-departure** variant this section does not cover, the antenna-array topology that decides whether the array sits in the infrastructure or the handset, and the Bluetooth SIG's own accuracy claims. The sub-metre figure above is the measured counterpart to those claims, and it is an order of magnitude short of the centimetre-level the SIG whitepaper asserts for RTLS.
+
 ## Entity Summary
 
 ### Hardware
 - **WiFi APs**: Standard 802.11 access points providing RSSI/RTT/CSI; existing infrastructure — no special hardware
 - **BLE beacons**: iBeacons or generic BLE transmitters for RSSI fingerprinting or BT 5.1 AoA; low-cost
-- **BLE 5.1 antenna arrays**: Multi-element receiver antenna arrays for Angle of Arrival measurement; specialized hardware
+- **BLE 5.1 antenna arrays**: Multi-element receiver antenna arrays for Angle of Arrival measurement; specialized hardware. For AoD the array sits on the *transmitter* instead — see [[Bluetooth-Direction-Finding]]
 - **UWB anchors**: Dedicated UWB modules (e.g., Decawave/Qorvo); medium = UWB radio; required for 7cm accuracy
 - **IMUs / MEMS**: Accelerometers, gyroscopes for PDR (Pedestrian Dead Reckoning) — often embedded in smartphones
 - **FMCW RADAR**: mmWave modules (device-free); medium = mm-wave RF; see [[Indoor-Location-Sensor-Technologies]]

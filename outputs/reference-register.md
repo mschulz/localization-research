@@ -872,7 +872,7 @@ Sobehy, A., Renault, É., & Mühlethaler, P. *CSI based Indoor Localization usin
 
 Tabibiazar, A., Basir, O. *Compressive Sensing Indoor Localization.* IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2011. Electrical and Computer Engineering Department, University of Waterloo. → [[Compressive-Sensing-Localization]]
 
-**Source file**: [`raw/tabibiazar2011.pdf`](../raw/tabibiazar2011.pdf) (6 pages, fully text-extractable).
+**Source file**: `raw/tabibiazar2011.pdf` (6 pages, fully text-extractable).
 **Compiled**: 2026-08-14 ✅
 
 *(WSN localization recast as sparse signal recovery over a discretized spatial grid; ℓ₁-norm minimization from M ≥ O(K·log(N/K)) measurements; sparsifying dictionary Ψ built from grid signal readings; dictionary coherence µ(Ψ); measurements at 2.443 GHz; accuracy governed by SNR + detection threshold; 44×44 sparsity matrix in worked example; dynamic dictionary update proposed as future work. Full reference list — incl. Data Compression Conference DCC 2010 — retained in the PDF.)*
@@ -883,7 +883,7 @@ Tabibiazar, A., Basir, O. *Compressive Sensing Indoor Localization.* IEEE Intern
 
 Balestrieri, E., De Vito, L., Picariello, F., Tudosa, I. *A Method Exploiting Compressive Sampling for Localization of Radio Frequency Emitters.* IEEE Transactions on Instrumentation and Measurement (accepted 2019, publication 2020). DOI: 10.1109/TIM.2019.2954759. University of Sannio, Benevento, Italy. → [[Compressive-Sensing-Localization]]
 
-**Source file**: [`raw/balestrieri2020.pdf`](../raw/balestrieri2020.pdf) (10 pages, fully text-extractable).
+**Source file**: `raw/balestrieri2020.pdf` (10 pages, fully text-extractable).
 **Compiled**: 2026-08-14 ✅
 
 *(RF-emitter localization using Wideband Spectrum Sensors exploiting Compressive Sampling; R receivers at known coordinates; Non-Uniform Sampling below Nyquist over a wide band; COTS hardware receiver 1 MHz–3.8 GHz, 10 dBi antenna ~2.5 GHz. With 10 receivers, accuracy ~1 m; RMSE close to ML and CRLB, matches uniform-sampling performance up to compression ratio CR=64. Compared against ML, SDP-DRSS, WTLS-URSS/WTLS-DRSS; metrics RMSE (∆) + std dev (σ) vs CR and shadowing σ. Full reference list retained in the PDF.)*
@@ -894,7 +894,7 @@ Balestrieri, E., De Vito, L., Picariello, F., Tudosa, I. *A Method Exploiting Co
 
 Wang, L., Tiku, S., Pasricha, S. *CHISEL: Compression-Aware High-Accuracy Embedded Indoor Localization with Deep Learning.* arXiv:2107.01192v1, 2021. Colorado State University. → [[WiFi-Fingerprinting-Advances]], [[Indoor-Localization-ML-Methods]]
 
-**Source file**: [`raw/2107.01192v1.pdf`](../raw/2107.01192v1.pdf) (4 pages, fully text-extractable).
+**Source file**: `raw/2107.01192v1.pdf` (4 pages, fully text-extractable).
 **Compiled**: 2026-08-14 ✅
 
 *(Convolutional Autoencoder + CNN classifier, compression-aware. RSSI fingerprints reshaped to 24×24×1 images + data augmentation. Full model 171,209 params / ~801 KB; QAT + pruning → ~148 KB (81% reduction), latency −31%. UJIIndoorLoc (3 buildings, 5 floors); ~100% building/floor accuracy; ~6.95 m mean localization error (CHISEL-DA); ~2.63 m (38%) improvement over SAE / 1D-CNN prior works. Aggressive quantization trades up to ~3× accuracy for latency. Full reference list retained in the PDF.)*
@@ -905,7 +905,7 @@ Wang, L., Tiku, S., Pasricha, S. *CHISEL: Compression-Aware High-Accuracy Embedd
 
 Yang, J., Wang, Y., Cheng, W., Liu, Y., Lu, J., Wu, J., Qin, S., Han, G. *A fingerprint dictionary processing approach in indoor localization system based on wi-fi.* Scientific Reports 14, 2024. → [[WiFi-Fingerprinting-Advances]]
 
-**Source file**: [`raw/s41598-024-75306-3.pdf`](../raw/s41598-024-75306-3.pdf) (17 pages, fully text-extractable).
+**Source file**: `raw/s41598-024-75306-3.pdf` (17 pages, fully text-extractable).
 **Compiled**: 2026-08-14 ✅
 
 *(FDP — Fingerprint Dictionary Preprocessing — applies Convolutional Dictionary Learning (CDL) to offline radio-map data: learns convolutional kernels giving a sparse representation of AP RSS at each RP; supports denoising/anomaly detection and database compression. Online phase matches target fingerprint by sparse dictionary coding. Reported: ~28.1% data reduction (compression ratio 63.36%, ~35 KB); localization-accuracy improvements ~41–48% (41.48% overall) vs classical radio-map upgrade models such as LAAFU. Full reference list retained in the PDF.)*
@@ -916,8 +916,51 @@ Yang, J., Wang, Y., Cheng, W., Liu, Y., Lu, J., Wu, J., Qin, S., Han, G. *A fing
 
 *LLM-generated review article* (25 pages) — a machine-generated survey (TOC-style: localization taxonomy, state-estimation framing, Bayesian/ranging/CSI-fingerprinting methods, global re-localization, loop-closure, metric-map/submap registration, multi-robot, LiDAR modalities). The filename is the generation prompt; the document contains no verifiable primary citations.
 
-**Source file**: [`raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf`](<../raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf>)
+**Source file**: `raw/I am researching localisation techniques, algorithms and hardware approaches. Generate a review article..pdf`
 **Status**: ⚠️ NOT COMPILED — synthetic secondary source. Per CLAUDE.md (cite specific source files; flag contradictions), unverifiable generated content was not merged into knowledge articles. Cataloged here for provenance; its topics (CS fingerprinting, Bayesian/state-estimation, SLAM/loop-closure) are already covered by primary sources in [[WiFi-Fingerprinting-Advances]], [[Indoor-Localization-ML-Methods]], and [[Compressive-Sensing-Localization]].
+
+---
+
+## Source 80: 1901_Enhancing Bluetooth Location Service_FINAL.pdf
+
+Bluetooth SIG. *Enhancing Bluetooth Location Services with Direction Finding.* Bluetooth Special Interest Group whitepaper, 2019. → [[Bluetooth-Direction-Finding]]
+
+**Source file**: `raw/1901_Enhancing Bluetooth Location Service_FINAL.pdf` (12 pages, fully text-extractable).
+**Compiled**: 2026-08-20 ✅
+
+*(⚠️ **Standards-body whitepaper, not a peer-reviewed paper** — no experiment, no dataset, no ground truth, no baseline. Describes the optional direction-finding feature added in Bluetooth Core Specification 5.1: AoA (array on the receiver, single antenna on the located device) and AoD (array on the transmitting beacon, single antenna on the phone), both estimating angle from IQ samples taken while switching antennas across the array. Frames the solution space as proximity (PoI information, item finding) vs positioning (RTLS, IPS), with RSSI trilateration giving metre-level (~1–10 m) and direction finding claimed to reach "centimetre-level, depending on deployment considerations" for RTLS. Accuracy figures are assertions; the measured BLE 5.1 AoA counterpart in [[Indoor-Localization-ML-Methods]] reports sub-metre, an order of magnitude short of the claim. AoA/AoD interoperability profiles were unreleased at publication. Market figure — 400M units/year by 2022 — attributed to ABI Research.)*
+
+---
+
+## Source 81: Adaptive_Sampling_for_Fingerprinting_Localization.pdf
+
+Li, X., Al-Tous, H., Tirkkonen, O. *Adaptive Sampling for Fingerprinting Localization.* Proc. IEEE Vehicular Technology Conference (VTC2025-Fall), published 06/01/2026. DOI: 10.1109/VTC2025-Fall65116.2025.11310680. Aalto University. → [[WiFi-Fingerprinting-Advances]]
+
+**Source file**: `raw/Adaptive_Sampling_for_Fingerprinting_Localization.pdf` (8 pages, accepted-manuscript version, fully text-extractable).
+**Compiled**: 2026-08-20 ✅
+
+*(Kriging-guided **batch adaptive sampling** for CSI-based fingerprint radio maps. Its stated gap is the limitation of Liu, X.-Y. et al., *Adaptive Sampling of RF Fingerprints* (IEEE TNSE 2016; compiled in [[WiFi-Fingerprinting-Advances]] but **not currently registered here** — see the register-coverage note at the end) — adaptive tubal-sampling works on scalar RSS and becomes computationally prohibitive on high-dimensional CSI. Key reframing: invert localization Γ_L : z ↦ (x, σ²ₓ) into radio mapping Γ_RM : x ↦ (z, σ²_z), so uncertainty can be assessed **before** measuring. Log-covariance features from B base stations (F = B·M²); Kriging prediction variance plus clustering (α = 20) selects β = 15 points per iteration; GPR and WKNN matchers, chosen over DNNs for the small-data regime. Results: WKNN RMSE 0.40 → **0.26 m** at ~300 points (35% reduction), 300 adaptive points ≈ 1000 random (70% fewer), GPR 0.48 → 0.36 m. **Simulation only and cellular rather than WiFi** — QuaDRiGa synthetic channels, 3GPP TR 38.901 InF-SL NLoS, 4 BSs with 8-element ULAs at 3.5 GHz.)*
+
+---
+
+## Source 82: TIIS Vol 13, No 1-12.pdf
+
+Lu, S., Zhang, J., Ma, X., Kan, C. *Efficient Kernel Based 3-D Source Localization via Tensor Completion.* KSII Transactions on Internet and Information Systems 13(1), Jan 2019, pp. 206 ff. DOI: 10.3837/tiis.2019.01.012. → [[Compressive-Sensing-Localization]]
+
+**Source file**: `raw/TIIS Vol 13, No 1-12.pdf` (16 pages, fully text-extractable).
+**Compiled**: 2026-08-20 ✅
+
+*(⚠️ **The filename is a journal-issue label, not a title** — it reads like a table of contents and was twice dismissed as "not a paper" before the text was extracted. It is a real KSII TIIS article. Exploits spatial correlation of RSS to establish the **low-rank** property of the 3-D fingerprint tensor, recovers unmeasured grid points by **tensor completion**, then matches with **kernel learning**. Simulated 20×20×20 m cube, 9 sensing nodes, 10×10×10 grid, γ = 3, sampling rate 0.5; ~0.8 m for kernel schemes above 0.5 sampling rate, overhead "almost cut in a half". Five-way baseline design (OD/TC/IC × Kernel/KNN) separates the completion contribution from the matcher's. **Authors' own reported limitation:** at 0.2 sampling rate the method falls *below* plain interpolation — too little data "exceeds the tolerance of tensor completion".)*
+
+---
+
+## Register coverage gap (noted 2026-08-20)
+
+**11 of the 66 sources declared in article `source-files:` have no entry in this register.** Found while compiling Sources 80–82, and left unfixed deliberately: closing it means opening each PDF to attribute it properly, and at least one case needs a *merge* rather than an addition — Source 21 ("Liu, W. et al. — Tensor-based radio map sparsification", flagged there as having an incompletely extracted reference list) looks like a weak-metadata record of the same file the article cites as Liu, X.-Y. et al., *Adaptive Sampling of RF Fingerprints* (IEEE TNSE 2016). Guessing at that would make the register less trustworthy, not more.
+
+The 11: `Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf`, `Almalioglu et al_2020_Milli-RIO.pdf`, `Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf`, `CSI_based_Indoor_Localization.pdf`, `Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf`, `Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf`, `Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf`, `Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf`, `Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor.pdf`, `Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf`, `fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf`.
+
+**Note also:** this register's repo-relative source links (`[…](../raw/…)`) were dead as of the 2026-08-20 relocation — `../raw/` no longer exists, since `raw/` moved to the Dropbox library. The 5 affected entries now carry a plain code-formatted filename citation, which `CLAUDE.md` defines relative to the library root. **Do not reintroduce repo-relative links to `raw/`.**
 
 ---
 

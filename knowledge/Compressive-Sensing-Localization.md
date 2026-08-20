@@ -1,9 +1,11 @@
 ---
-tags: [indoor-localization, compressive-sensing, compressive-sampling, sparse-recovery, l1-minimization, RSS, RF-emitter-localization, wireless-sensor-networks, dictionary, non-uniform-sampling]
+tags: [indoor-localization, compressive-sensing, compressive-sampling, sparse-recovery, l1-minimization, RSS, RF-emitter-localization, wireless-sensor-networks, dictionary, non-uniform-sampling, tensor-completion, low-rank, kernel-learning, 3D-localization]
 date-compiled: 2026-08-14
+updated: 2026-08-20
 source-files:
   - "raw/tabibiazar2011.pdf"
   - "raw/balestrieri2020.pdf"
+  - "raw/TIIS Vol 13, No 1-12.pdf"
 status: active
 ---
 
@@ -16,7 +18,9 @@ Compressive Sensing (CS) exploits the fact that, although a localization problem
 1. **CS for target/sensor position estimation** — Tabibiazar & Basir (2011) recast wireless-sensor-network localization as sparse signal recovery over a discretized spatial grid, recovering a target's position from a small number of inconsistent RSS/ToA measurements against known anchors.
 2. **Compressive *Sampling* for RF-emitter localization** — Balestrieri et al. (2020) apply CS at the *acquisition* stage: Wideband Spectrum Sensors sample a wide RF band far below Nyquist (Non-Uniform Sampling), relaxing throughput/data-transmission requirements while still localizing RF emitters via received-signal energy at spatially distributed receivers.
 
-Both share the core CS machinery (sparsifying dictionary Ψ, sensing matrix Φ, dictionary coherence µ(Ψ), and the measurement bound M ≥ O(K·log(N/K)) for K-sparse recovery from N candidates). This article is the dedicated home for the CS approach; the fingerprinting-side sparse-recovery reformulation and closely related radio-map matrix-completion methods are covered in [[WiFi-Fingerprinting-Advances]].
+3. **Tensor completion for a partially-measured fingerprint database** — Lu et al. (2019) exploit the **low-rank** structure that spatial correlation induces in the RSS data of a 3-D grid, and recover the *unmeasured* grid points rather than the target position, then match with a kernel method. This is the low-rank sibling of sparse recovery: same "recover a high-dimensional object from few samples" premise, applied to the training database instead of the position estimate.
+
+The first two share the core CS machinery (sparsifying dictionary Ψ, sensing matrix Φ, dictionary coherence µ(Ψ), and the measurement bound M ≥ O(K·log(N/K)) for K-sparse recovery from N candidates). This article is the dedicated home for the CS approach; the fingerprinting-side sparse-recovery reformulation and closely related radio-map matrix-completion methods are covered in [[WiFi-Fingerprinting-Advances]].
 
 ---
 
@@ -59,10 +63,42 @@ A novel method for **Radio Frequency (RF) emitter localization** using **Wideban
 
 ---
 
+## Source 3 — Efficient Kernel Based 3-D Source Localization via Tensor Completion (Lu, Zhang, Ma & Kan, 2019)
+
+**Citation.** Lu, S., Zhang, J., Ma, X., Kan, C. *Efficient Kernel Based 3-D Source Localization via Tensor Completion.* KSII Transactions on Internet and Information Systems, **13**(1), Jan 2019, pp. 206 ff. DOI: 10.3837/tiis.2019.01.012. Capital University of Economics and Business; Heilongjiang International University; Army Engineering University of PLA. Source: `raw/TIIS Vol 13, No 1-12.pdf` (16 pages, fully text-extractable — the filename is a journal-issue label, not a title).
+
+### Approach
+
+The target problem is **source localization in 3-D wireless sensor networks** — UAVs in constrained airspace, sources in venues — where the authors argue two standard routes both fail. Distance-based RSS methods need the propagation model "correctly and concisely described", which varying air-ground topography defeats. Fingerprinting is more robust to complex conditions because it learns rather than models, but a 3-D database is punishing to build: the grid-point count explodes relative to 2-D, denser grids mean better accuracy and more training, some points are simply unmeasurable ("remote corners"), and any environmental change forces recalibration.
+
+Their move is to stop trying to measure every grid point. Three steps:
+
+1. **Establish the low-rank property.** Exploit the *spatial correlation* of RSS across the measurement area to show the RSS data matrix is low-rank — the structural precondition that makes recovery from partial data possible at all.
+2. **Tensor completion in the training phase.** Measure RSS at a randomly chosen subset Ω of grid points, then recover the missing entries of the fingerprint tensor. The database ends up complete and the measurement campaign does not.
+3. **Kernel-based learning in the matching phase.** Replace nearest-neighbour matching with a kernel method that "clarifies the complicated relationship between the fingerprint and the corresponding position", improving sensitivity and accuracy in the online phase.
+
+### Entity Summary
+
+- **Hardware / medium:** 3-D wireless sensor network; **9 sensing nodes** at known coordinates; one unknown source; RF/RSS medium. Simulated, not built.
+- **Software:** Tensor-completion solver over the incomplete RSS tensor; kernel-learning matcher. No implementation or code released.
+- **Algorithm:** Low-rank tensor completion for fingerprint-database recovery + kernel-based matching, combined in their Algorithm 1 ("Efficient Kernel-based Localization via Tensor Completion").
+- **Accuracy:** ~**0.8 m** position precision for the kernel-matching schemes once the **sampling rate exceeds 0.5**. Across the swept sampling range (0.2–0.8) RMSE spans roughly 1–3.5 m. Their headline efficiency claim: performance comparable to using the complete database "while the overhead was almost cut in a half".
+- **Evaluation:** Simulation only. **20 × 20 × 20 m** cube divided into **10 × 10 × 10** grids (each ≈ 2 × 2 × 2 m); source placed at random; transmit power P_S = 0 dBm; path-loss exponent **γ = 3**; zero-mean AWGN; sampling rate **0.5**, samples chosen at random.
+- **Ground truth:** Known simulated source positions and known sensing-node coordinates.
+- **Metrics:** RMSE of the estimated source position, swept against data sampling rate.
+- **Baseline:** Five schemes compared, which is unusually careful for the claim being made — **OD-Kernel** (complete data + kernel, the upper bound), **TC-Kernel** (proposed), **IC-Kernel** (interpolation completion + kernel), **TC-KNN** and **IC-KNN** (both completions with KNN matching instead). The two-factor design separates the contribution of the completion step from that of the kernel step.
+
+### The limitation the authors report themselves
+
+At a **0.2 sampling rate the proposed TC-Kernel scheme performs *worse* than the simpler IC-Kernel interpolation baseline**, and the advantage of tensor completion over interpolation "disappeared gradually as the sampling rate decreased". Their explanation: too little measured data "exceeds the tolerance of tensor completion", and the kernel matcher is more sensitive than KNN in harsh cases. So the method's whole premise — measure less — has a floor, and below it a cruder method wins. Reported plainly by the authors rather than buried, and it is the most useful sentence in the paper for anyone deciding whether to use this.
+
+---
+
 ## Contradictions / Scope Notes
 
 - The two works use "compressive" at **different stages**: Tabibiazar & Basir apply sparsity to the **spatial-position** unknown (grid occupancy), whereas Balestrieri et al. apply compression to the **signal-acquisition** stage (sub-Nyquist wideband sampling) and then localize emitters by conventional multilateration. Both are legitimately "compressive sensing for localization" but are not directly comparable head-to-head.
-- Accuracy figures are not directly comparable: Tabibiazar reports a *normalized* distance error under simulation, while Balestrieri reports *metric* RMSE (~1 m with 10 receivers).
+- Accuracy figures are not directly comparable: Tabibiazar reports a *normalized* distance error under simulation, while Balestrieri reports *metric* RMSE (~1 m with 10 receivers). Lu et al. report metric RMSE (~0.8 m) but in a 3-D simulated cube with a 2 m grid, so their figure is bounded by grid resolution rather than by the estimator.
+- **Recover-the-gaps and choose-the-points fail in opposite regimes, and the corpus now holds both sides.** Lu et al. sample *at random* and repair the database afterwards, and their method degrades below plain interpolation once the sampling rate drops to 0.2. Li, Al-Tous & Tirkkonen (2026, compiled in [[WiFi-Fingerprinting-Advances]]) attack the same measurement-cost problem from the other end: spend the same budget on *deliberately chosen* locations, guided by Kriging variance, and they report matching a 1000-point random campaign with 300 adaptive points. The two are not in direct conflict — different features (RSS vs high-dimensional CSI), different dimensionality, no shared testbed — but they answer the same question differently. **The combination already exists in the corpus:** Liu et al. (2016), also in [[WiFi-Fingerprinting-Advances]], does informed sampling *and* tensor completion together on RSS, reporting 71% sample reduction at high SNR — and it is precisely the paper Li et al. cite as not generalising to high-dimensional CSI. So the open question is narrower than it first looks: not whether to combine them, but whether Liu's combination survives the move from scalar RSS to CSI features.
 
 ---
 
@@ -70,10 +106,12 @@ A novel method for **Radio Frequency (RF) emitter localization** using **Wideban
 
 - Tabibiazar & Basir cite the Data Compression Conference (DCC 2010, pp. 356–365) among CS foundations; full reference list retained in `raw/tabibiazar2011.pdf`.
 - Balestrieri et al. compare against ML, SDP-DRSS, WTLS-URSS/WTLS-DRSS methods (their ref [21]) and ESPRIT-class parameter estimation; full reference list retained in `raw/balestrieri2020.pdf`.
+- Lu et al. cite the signature-map-construction literature (their refs [21]–[26]) as the prior art for completing a measurement matrix, and an interpolation-completion method (their ref [29]) which they implement as the IC baseline; full reference list retained in `raw/TIIS Vol 13, No 1-12.pdf`.
 
 ## Relationships
 
 - [[WiFi-Fingerprinting-Advances]] — contains the fingerprinting-side "Sparsity-Based Localization (Compressive Sensing)" reformulation (user position over RPs is sparse) and the related radio-map **matrix-completion / low-rank recovery** methods (Liu 2016, Tan 2020, Wang 2021), plus the CDL/CHISEL compression work; this article is the dedicated CS home cross-linked from there.
 - [[Indoor-Localization-ML-Methods]] — ℓ₁ / sparse recovery sits alongside the mathematical-methods taxonomy (deterministic, probabilistic, geometric, optimization) surveyed there.
-- [[UWSN-Localization]] — Tabibiazar & Basir frame their problem as wireless-sensor-network localization; CS is an alternative to the ToA/TDoA/AoA/DV-Hop family used underwater.
+- [[UWSN-Localization]] — Tabibiazar & Basir and Lu et al. both frame their problem as wireless-sensor-network localization; CS and tensor completion are alternatives to the ToA/TDoA/AoA/DV-Hop family used underwater. Lu et al.'s 3-D framing (UAVs, air-ground topography) is the aerial counterpart to the underwater 3-D geometry treated there.
+- [[Indoor-IPS-Datasets]] — the measurement-cost problem all three sources attack is the reason public radio-map datasets matter; a completed or adaptively-sampled database is only as good as the campaign behind it.
 - [[Indoor-Location-Sensor-Technologies]] — RF/RSS and wideband spectrum sensing are the underlying media exploited by both CS methods.
