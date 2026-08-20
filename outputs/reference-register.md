@@ -549,8 +549,7 @@ Ouyang, G. & Abed-Meraim, K. *A Survey of Magnetic Field Based Indoor Localizati
 
 ---
 
-## Source 38: Sci-Hub. CSI-Based Indoor Localization.pdf
-
+## Source 38: CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf
 Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-Based Indoor Localization.* IEEE Transactions on Parallel and Distributed Systems, Vol. 24, No. 7, July 2013. DOI: 10.1109/TPDS.2012.214. HKUST / Sun Yat-sen University. → [[CSI-Indoor-Localization]]
 
 ✅ **Compiled** — Full paper text sourced from Academia.edu (2026-06-15). Article substantially expanded with complete system description, equations, and experimental results.
@@ -559,8 +558,7 @@ Wu, K., Xiao, J., Yi, Y., Chen, D., Luo, X., Ni, L.M. *CSI-Based Indoor Localiza
 
 ---
 
-## Source 39: Sci-Hub. A comparison of deterministic and probabilistic methods for indoor localization.pdf
-
+## Source 39: A comparison of deterministic and probabilistic methods for indoor localization - Journal o.pdf
 Dawes, B. & Chin, K.W. *A Comparison of Deterministic and Probabilistic Methods for Indoor Localization.* Journal of Systems and Software, 2011. → [[WiFi-Fingerprinting-Advances]]
 
 | # | Reference | In raw/ |
@@ -572,8 +570,7 @@ Dawes, B. & Chin, K.W. *A Comparison of Deterministic and Probabilistic Methods 
 
 ---
 
-## Source 40: Sci-Hub. WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning.pdf
-
+## Source 40: WiDeep - WiFi-based Accurate and Robust Indoor Localization System using Deep Learning - 201.pdf
 Abbas, M., Elhamshary, M., Rizk, H., Torki, M., Youssef, M. *WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning.* PerCom 2019, IEEE. → [[WiFi-Fingerprinting-Advances]]
 
 | # | Reference | In raw/ |
@@ -597,8 +594,7 @@ Lim, H., Kung, L.C., Hou, J.C., Luo, H. *Zero-Configuration, Robust Indoor Local
 
 ---
 
-## Source 42: Sci-Hub. A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems.pdf
-
+## Source 42: A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems - Jo.pdf
 Roy, P. & Chowdhury, C. *A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems.* Journal of Ambient Intelligence and Smart Environments, 2021. → [[Indoor-Localization-ML-Methods]]
 
 *(Comprehensive survey: heuristic feature-based ML to deep learning; KNN/SVM/Naive Bayes/decision trees; ELM; transfer learning; SLAM for robots; 50+ approaches taxonomy)*
@@ -639,8 +635,7 @@ Obeidat, H. et al. *A Review of Indoor Localization Techniques and Technologies.
 
 ---
 
-## Source 47: Sci-Hub. The Microsoft Indoor Localization Competition.pdf
-
+## Source 47: The Microsoft Indoor Localization Competition - Experiences and Lessons Learned - IEEE Signa.pdf
 Lymberopoulos, D. & Liu, J. *The Microsoft Indoor Localization Competition: Experiences and Lessons Learned.* IEEE Signal Processing Magazine, 2017. → [[Indoor-IPS-Datasets]]
 
 | # | Reference | In raw/ |
@@ -659,33 +654,29 @@ Potortì, F. et al. *Comparing Heterogeneous Indoor Localization Solutions for B
 
 ---
 
-## Source 49: Sci-Hub. RSSI-Based Indoor Localization With the Internet of Things: IEEE Access, 2018.pdf
-
+## Source 49: RSSI-Based Indoor Localization With the Internet of Things - IEEE Access, 2018.pdf
 Sadowski, S. & Spachos, P. *RSSI-Based Indoor Localization With the Internet of Things.* IEEE Access, 2018. University of Guelph. → [[Indoor-IPS-Datasets]]
 
 *(WiFi/BLE/Zigbee/LoRaWAN RSSI comparison; accuracy vs. power consumption; multi-technology public dataset available)*
 
 ---
 
-## Source 50: Sci-Hub. Indoor localization without the pain.pdf
-
+## Source 50: Indoor localization without the pain - Proceedings of the sixteenth annual international co.pdf
 🔁 **DUPLICATE** — Same content as `raw/ez-mobicom.pdf` (Chintalapudi et al., MobiCom 2010 — EZ Indoor Localization). Already compiled → [[EZ-Indoor-Localization]]. Sci-Hub mirror copy; do not re-process.
 
 ---
 
-## Source 51: Sci-Hub. A Survey of Indoor Localization Systems and Technologies.pdf
-
+## Source 51: A Survey of Indoor Localization Systems and Technologies - IEEE Communications Surveys & Tu.pdf
 🔁 **DUPLICATE** — Same content as `raw/A_Survey_of_Indoor_Localization_Systems_and_Techno.pdf` (Zafari et al., IEEE COMST 2019). Already compiled → [[Indoor-Location-Sensor-Technologies]]. Sci-Hub mirror copy; do not re-process.
 
 ---
 
-## Source 52: Sci-Hub. Recent Advances in Indoor Localization.pdf
-
+## Source 52: Recent Advances in Indoor Localization - A Survey on Theoretical Approaches and Applications.pdf
 🔁 **DUPLICATE** — Same content as `raw/077620951.pdf` (Yassin et al., IEEE COMST 2017 — Recent Advances in Indoor Localization). Already compiled → [[Indoor-Location-Sensor-Technologies]]. Sci-Hub mirror copy; do not re-process.
 
 ---
 
-## Source 53: Sci-Hub. Analysis of WLAN received signal strength indication for indoor location fingerprinting.pdf
+## Source 53: Analysis of WLAN’s received signal strength indication for indoor location fingerprinting.pdf
 
 ⚠️ **SCANNED PDF** — Contains no extractable text. Appears to be a scanned paper on WLAN RSSI analysis for location fingerprinting. Cannot compile without OCR.
 
@@ -721,8 +712,7 @@ Maneerat, K., Prommak, C., & Kaemarungsi, K. *Floor Estimation Algorithm for Wir
 
 ---
 
-## Source 57: Sci-Hub. Indoor localization improvement via adaptive RSS fingerprinting database.pdf
-
+## Source 57: Indoor localization improvement via adaptive RSS fingerprinting database - The Internationa.pdf
 Koweerawong, C. et al. *Indoor localization improvement via adaptive RSS fingerprinting database.* The International Conference on Information Networking (ICOIN), 2013.
 
 ⚠️ **SCANNED PDF** — Contains no extractable text. Adaptive RSS fingerprint update method from Kaemarungsi research group. Documented as reference in [[Kaemarungsi-WiFi-Fingerprinting]].
@@ -741,72 +731,63 @@ Wisanmongkol, J., Klinkusoom, L., Sanpechuda, T., Kovavisaruch, L., & Kaemarungs
 
 ---
 
-## Source 59: Sci-Hub. Optimal placement of reference nodes for wireless indoor positioning systems.pdf
-
+## Source 59: Optimal placement of reference nodes for wireless indoor positioning systems - 2014 11th In.pdf
 Aomumpai, S. et al. *Optimal placement of reference nodes for wireless indoor positioning systems.* 2014 11th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology.
 
 ⚠️ **SCANNED PDF** — Contains no extractable text. AP placement optimization from Kaemarungsi research group. Documented as reference in [[Kaemarungsi-WiFi-Fingerprinting]].
 
 ---
 
-## Source 60: Sci-Hub. A Practical Approach to Landmark Deployment for Indoor Localization.pdf
-
+## Source 60: A Practical Approach to Landmark Deployment for Indoor Localization - 2006 3rd Annual IEEE.pdf
 Chen, Y., Francisco, J.-A., Trappe, W., Martin, R.P. *A Practical Approach to Landmark Deployment for Indoor Localization.* 3rd Annual IEEE SECON 2006. Rutgers University.
 
 ✅ **Compiled** → [[RADAR-WiFi-Fingerprinting]] (Section: AP / Landmark Placement Theory). Full 10-page paper verified and read from winlab.rutgers.edu. Key content: LLS upper bound analysis, maxL-minE algorithm, optimal geometric patterns (equilateral triangles/squares), 20–35% improvement over collinear deployments across RADAR, NLS, ABP, BN algorithms.
 
 ---
 
-## Source 61: Sci-Hub. A survey of experimental evaluation in indoor localization research.pdf
-
+## Source 61: A survey of experimental evaluation in indoor localization research - 2015 International Co.pdf
 Adler, S., Schmitt, S., Wolter, K., Kyas, M. *A Survey of Experimental Evaluation in Indoor Localization Research.* IEEE IPIN 2015. Freie Universität Berlin / Reykjavík University.
 
 ✅ **Compiled** → [[Indoor-IPS-Datasets]] (Section: IPIN Conference Evaluation Survey). 183 randomly selected IPIN papers (2010–2014) categorised across 5 aspects: technology, evaluation method, ground truth, metrics, baseline. Identifies evaluation diversity as primary obstacle to cross-paper comparison.
 
 ---
 
-## Source 62: Sci-Hub. A survey of mathematical methods for indoor localization.pdf
-
+## Source 62: A survey of mathematical methods for indoor localization - 2009 IEEE International Symposiu.pdf
 Seco, F., Jiménez, A.R., Prieto, C., Roa, J., Koutsou, K. *A Survey of Mathematical Methods for Indoor Localization.* IEEE WISP 2009. Instituto de Automática Industrial – CSIC, Madrid.
 
 ✅ **Compiled** → [[Indoor-Localization-ML-Methods]] (Section: Mathematical Methods Taxonomy). Four-category taxonomy: geometry-based, cost function minimisation, fingerprinting, Bayesian. Commentary on NLOS immunity and applicability of each category.
 
 ---
 
-## Source 63: Sci-Hub. Accurate indoor localization with zero start-up cost.pdf
-
+## Source 63: Accurate indoor localization with zero start-up cost - Proceedings of the 20th annual inter.pdf
 Kumar, S., Gil, S., Katabi, D., Rus, D. *Accurate Indoor Localization With Zero Start-up Cost (Ubicarse).* ACM MobiCom 2014. MIT.
 
 ✅ **Compiled** → [[EZ-Indoor-Localization]] (Section: Related Zero-Infrastructure System: Ubicarse). Full paper verified and read from cse.buffalo.edu. SAR on handhelds; user twists device along unknown path; 39cm 3D median, 17cm object geotagging; HP SplitX2 tablet; no fingerprinting, no infrastructure.
 
 ---
 
-## Source 64: Sci-Hub. An Indoor Localization Mechanism Using Active RFID Tag.pdf
-
+## Source 64: An Indoor Localization Mechanism Using Active RFID Tag - IEEE International Conference on S.pdf
 Jin, G., Lu, X., Park, M.-S. *An Indoor Localization Mechanism Using Active RFID Tag.* IEEE SUTC 2006. Korea University.
 
 ✅ **Compiled** → [[Indoor-Location-Sensor-Technologies]] (Section: Active RFID Enhancement — LANDMARC Accuracy Improvement). Analyses LANDMARC failure modes; proposes enhanced reference tag selection with adaptive weighting to improve KNN accuracy.
 
 ---
 
-## Source 65: Sci-Hub. Bluetooth indoor localization with multiple neural networks.pdf
-
+## Source 65: Bluetooth indoor localization with multiple neural networks - IEEE 5th International Sympos.pdf
 Altini, M., Brunelli, D., Farella, E., Benini, L. *Bluetooth Indoor Localization with Multiple Neural Networks.* IEEE ISSNIP 2010. University of Bologna / University of Trento.
 
 ✅ **Compiled** → [[Indoor-Localization-ML-Methods]] (Section: Bluetooth Indoor Localization with Multiple Neural Networks). Per-orientation specialist NNs outperform single NN; addresses RSSI variability due to user body orientation; enables high-definition accuracy for indoor navigation with cost-effective BT infrastructure.
 
 ---
 
-## Source 66: Sci-Hub. Design and Analysis of a Bluetooth-Based Indoor Localization System.pdf
-
+## Source 66: Design and Analysis of a Bluetooth-Based Indoor Localization System - Lecture Notes in Comp.pdf
 Bruno, R. & Delmastro, F. *Design and Analysis of a Bluetooth-Based Indoor Localization System (BIPS).* Lecture Notes in Computer Science, Springer, 2003. IIT Institute CNR, Pisa.
 
 ✅ **Compiled** → [[Indoor-Location-Sensor-Technologies]] (Section: BIPS — Bluetooth Indoor Positioning System). Integrates BT device discovery into existing AP infrastructure; no dedicated localization hardware; negligible overhead; simulative analysis confirms timely location updates.
 
 ---
 
-## Source 67: Sci-Hub. Evaluation of the reliability of RSSI for indoor localization.pdf
-
+## Source 67: Evaluation of the reliability of RSSI for indoor localization - 2012 International Conferen.pdf
 Dong, Q. & Dargie, W. *Evaluation of the Reliability of RSSI for Indoor Localization.* ICWCUCA 2012. TU Dresden.
 
 ✅ **Compiled** → [[RADAR-WiFi-Fingerprinting]] (Section: RSSI Reliability for Mobile Indoor Localization). Full 6-page paper verified and read from rn.inf.tu-dresden.de. SunSPOT/CC2420 ZigBee motes; 4 estimation methods (raw, moving average, weighted average, curve fitting) all fail; RSSI unreliable as sole input for mobile indoor localization.
