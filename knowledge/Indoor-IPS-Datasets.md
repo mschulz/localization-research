@@ -3,13 +3,13 @@ tags: [indoor-localization, datasets, benchmarks, WiFi, BLE, UWB, research-resou
 date-compiled: 2026-06-15
 source-files:
   - "raw/2403.04333v1.pdf"
-  - "raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor .pdf | My Library | Zote.pdf"
-  - "raw/Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor .pdf | My Library | Zotero.pdf"
-  - "raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning .pdf | My Library |.pdf"
-  - "raw/Sci-Hub. The Microsoft Indoor Localization Competition: Experiences and Lessons Learned : IEEE Signa.pdf"
+  - "raw/Barsocchi et al. - 2016 - A multisource and multivariate dataset for indoor.pdf"
+  - "raw/Toth and Tamas - 2016 - Miskolc IIS hybrid IPS Dataset for hybrid indoor.pdf"
+  - "raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf"
+  - "raw/The Microsoft Indoor Localization Competition - Experiences and Lessons Learned - IEEE Signa.pdf"
   - "raw/sensors-17-02327-v2.pdf"
-  - "raw/Sci-Hub. RSSI-Based Indoor Localization With the Internet of Things : IEEE Access, 2018.pdf"
-  - "raw/Sci-Hub. A survey of experimental evaluation in indoor localization research : 2015 International Co.pdf"
+  - "raw/RSSI-Based Indoor Localization With the Internet of Things - IEEE Access, 2018.pdf"
+  - "raw/A survey of experimental evaluation in indoor localization research - 2015 International Co.pdf"
 status: active
 ---
 
@@ -172,7 +172,7 @@ This paper documents a pervasive but underappreciated problem: **fingerprinting 
 
 ### IPIN Conference Evaluation Survey (Adler et al., IEEE IPIN 2015)
 
-Adler, S., Schmitt, S., Wolter, K., Kyas, M. *A Survey of Experimental Evaluation in Indoor Localization Research: A Look Back on IPIN Conferences 2010, 2011, 2012, 2013, and 2014.* IEEE IPIN 2015, Banff, Alberta, Canada. Freie Universität Berlin / Reykjavík University. Source: `raw/Sci-Hub. A survey of experimental evaluation in indoor localization research : 2015 International Co.pdf`
+Adler, S., Schmitt, S., Wolter, K., Kyas, M. *A Survey of Experimental Evaluation in Indoor Localization Research: A Look Back on IPIN Conferences 2010, 2011, 2012, 2013, and 2014.* IEEE IPIN 2015, Banff, Alberta, Canada. Freie Universität Berlin / Reykjavík University. Source: `raw/A survey of experimental evaluation in indoor localization research - 2015 International Co.pdf`
 
 A systematic review of **183 randomly selected papers** from the first five IPIN conferences (2010–2014), analysing how evaluation methods have evolved across the field. Provides a meta-level view of what "good evaluation" looks like in indoor localization research and identifies persistent methodological gaps.
 
@@ -199,7 +199,7 @@ A systematic review of **183 randomly selected papers** from the first five IPIN
 
 ### Microsoft Indoor Localization Competition (2014–2017)
 
-Lymberopoulos, D. and Liu, J. *The Microsoft Indoor Localization Competition: Experiences and Lessons Learned.* IEEE Signal Processing Magazine, September 2017. DOI: 10.1109/MSP.2017.2713817. Source: `raw/Sci-Hub. The Microsoft Indoor Localization Competition: Experiences and Lessons Learned : IEEE Signa.pdf`
+Lymberopoulos, D. and Liu, J. *The Microsoft Indoor Localization Competition: Experiences and Lessons Learned.* IEEE Signal Processing Magazine, September 2017. DOI: 10.1109/MSP.2017.2713817. Source: `raw/The Microsoft Indoor Localization Competition - Experiences and Lessons Learned - IEEE Signa.pdf`
 
 A four-year competition (2014–2017) comparing diverse indoor localization technologies in realistic, unfamiliar environments. Over 100 teams from academia and industry participated.
 
@@ -253,7 +253,7 @@ The **EvAAL (Evaluating AAL Systems through Competitive Benchmarking)** framewor
 
 ### Multi-Technology IoT RSSI Dataset (Sadowski & Spachos, IEEE Access 2018)
 
-Sadowski, S. and Spachos, P. *RSSI-Based Indoor Localization With the Internet of Things.* IEEE Access, Vol. 6, 2018. DOI: 10.1109/ACCESS.2018.2843325. University of Guelph, Canada. Source: `raw/Sci-Hub. RSSI-Based Indoor Localization With the Internet of Things : IEEE Access, 2018.pdf`
+Sadowski, S. and Spachos, P. *RSSI-Based Indoor Localization With the Internet of Things.* IEEE Access, Vol. 6, 2018. DOI: 10.1109/ACCESS.2018.2843325. University of Guelph, Canada. Source: `raw/RSSI-Based Indoor Localization With the Internet of Things - IEEE Access, 2018.pdf`
 
 A comparative study of four IoT wireless technologies for indoor localization, with a publicly released multi-technology RSSI dataset:
 

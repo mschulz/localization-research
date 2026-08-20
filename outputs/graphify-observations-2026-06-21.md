@@ -243,7 +243,7 @@ The CSI split is not two communities but three, and each fragment has a differen
 ### Cause 1 — Two versions of the same paper, treated as strangers (Communities 2 and 15)
 
 The FILA paper exists in `raw/` as two distinct versions:
-- `raw/Sci-Hub. CSI-Based Indoor Localization : IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — the **journal version** (IEEE TPDS 2013, 333 KB)
+- `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — the **journal version** (IEEE TPDS 2013, 333 KB)
 - `raw/CSI_based_Indoor_Localization.pdf` — the **INFOCOM 2012 conference preprint** (586 KB)
 
 *(Confirmed by the knowledge article itself — line [9-S] of the Sobehy references section explicitly labels the latter "(preprint)" and the MD5 hashes differ: `caa329...` vs `1ba6f7...`.)*

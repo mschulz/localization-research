@@ -450,7 +450,7 @@ Alhomayani, F., Mahoor, M.H. *Oversampling Highly Imbalanced Indoor Positioning 
 
 ---
 
-## Source 28: PDF | My Library | Zotero.pdf — Bayesian Optimisation for NN Radio Localisation
+## Source 28: PDF - My Library - Zotero.pdf — Bayesian Optimisation for NN Radio Localisation
 
 Liu, X., Li, P., Zhu, Z. *Bayesian Optimisation-Assisted Neural Network Training Technique for Radio Localisation.* University of Sheffield / University of Bristol / Toshiba Europe. arXiv:2203.04032. → [[Indoor-Localization-ML-Methods]]
 

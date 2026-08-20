@@ -1,14 +1,8 @@
-# Raw source PDFs (large binaries — regenerate graph from graphify-out/graph.json)
+# Raw source PDFs (198M of large binaries, 85 files). Deliberately untracked: they are
+# published papers, re-retrievable, and they never delta-compress. NOTE: this means git
+# holds no copy of them at all -- not here, not on origin -- so their only backup is
+# whatever covers the working directory.
 raw/
-
-# Generated HTML visualization (rebuild with: graphify export html)
-graphify-out/graph.html
-
-# Extraction cache (derived from raw PDFs — regenerated automatically by graphify)
-graphify-out/cache/
-
-# graphify temp/intermediate files
-graphify-out/.graphify_*
 
 # macOS metadata
 .DS_Store

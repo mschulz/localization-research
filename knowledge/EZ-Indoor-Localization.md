@@ -3,7 +3,7 @@ tags: [indoor-localization, WiFi, zero-calibration, genetic-algorithm, propagati
 date-compiled: 2026-06-15
 source-files:
   - "raw/ez-mobicom.pdf"
-  - "raw/Sci-Hub. Accurate indoor localization with zero start-up cost : Proceedings of the 20th annual inter.pdf"
+  - "raw/Accurate indoor localization with zero start-up cost - Proceedings of the 20th annual inter.pdf"
 status: active
 ---
 
@@ -123,7 +123,7 @@ EZ represents a trade-off: calibration-free but higher error than calibrated met
 
 ## Related Zero-Infrastructure System: Ubicarse (Kumar et al., ACM MobiCom 2014)
 
-Kumar, S., Gil, S., Katabi, D., Rus, D. *Accurate Indoor Localization With Zero Start-up Cost.* ACM MobiCom 2014. Massachusetts Institute of Technology. Source: `raw/Sci-Hub. Accurate indoor localization with zero start-up cost : Proceedings of the 20th annual inter.pdf`; full paper verified at cse.buffalo.edu.
+Kumar, S., Gil, S., Katabi, D., Rus, D. *Accurate Indoor Localization With Zero Start-up Cost.* ACM MobiCom 2014. Massachusetts Institute of Technology. Source: `raw/Accurate indoor localization with zero start-up cost - Proceedings of the 20th annual inter.pdf`; full paper verified at cse.buffalo.edu.
 
 Ubicarse and EZ share the same goal — accurate indoor localization with no pre-deployment fingerprinting or specialised infrastructure — but take fundamentally different approaches. Where EZ infers AP positions from accumulated RSS using a genetic algorithm, Ubicarse enables a **single device to perform its own localisation** using Synthetic Aperture Radar (SAR) applied to WiFi signals.
 

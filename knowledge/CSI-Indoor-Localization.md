@@ -2,7 +2,7 @@
 tags: [WiFi, CSI, fingerprinting, OFDM, indoor-localization, RSSI, FILA, device-based, multipath, physical-layer, propagation-model, trilateration, Bayesian, ensemble-learning, MIMO, data-augmentation]
 date-compiled: 2026-06-15
 source-files:
-  - "raw/Sci-Hub. CSI-Based Indoor Localization : IEEE Transactions on Parallel and Distributed Systems, 2013.pdf"
+  - "raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf"
   - "raw/CSI_based_Indoor_Localization.pdf"
   - "raw/v1_ CSI_based_Indoor_localization_using_Ensemble_Neural_Networks.pdf"
 status: active
@@ -401,7 +401,7 @@ The ~30% improvement over NDR (4.3 cm → 3.1 cm) is achieved with 11 MLPs; accu
 
 This article covers two versions of the same work:
 - **IEEE INFOCOM 2012 conference paper** (preprint): `raw/CSI_based_Indoor_Localization.pdf` — shorter, introduces the core FILA system
-- **IEEE TPDS 2013 journal paper** (full version): `raw/Sci-Hub. CSI-Based Indoor Localization : IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — expanded evaluation, additional scenarios
+- **IEEE TPDS 2013 journal paper** (full version): `raw/CSI-Based Indoor Localization - IEEE Transactions on Parallel and Distributed Systems, 2013.pdf` — expanded evaluation, additional scenarios
 
 The Sobehy et al. 2019 ensemble paper (`raw/v1_ CSI_based_Indoor_localization_using_Ensemble_Neural_Networks.pdf`) builds on the TPDS version.
 

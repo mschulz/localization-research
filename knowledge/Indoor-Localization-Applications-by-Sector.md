@@ -4,7 +4,7 @@ date-compiled: 2026-06-15
 source-files:
   - "raw/applsci-15-01544-v2.pdf"
   - "raw/A_Comprehensive_Review_of_Indoor_Localization_Tech.pdf"
-  - "raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf | My Library | Zo.pdf"
+  - "raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf"
 status: active
 ---
 
@@ -73,7 +73,7 @@ Papaioannou et al. (DOI: 10.1109/TMC.2016.2613523) address tracking construction
 - **Social forces model**: Worker motion is predicted using a social forces formulation — people avoid obstacles, follow corridors, and move in groups; this prior significantly improves multi-target tracking under occlusion from machinery
 - **Why it's hard**: Construction sites are uniquely dynamic — walls appear and disappear, metal scaffolding moves, and radio maps are invalidated on weekly timescales; the system must adapt without full re-survey
 
-**Source**: `raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf | My Library | Zo.pdf`
+**Source**: `raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf`
 
 ## Military and Emergency Response
 

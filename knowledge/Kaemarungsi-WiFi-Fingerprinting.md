@@ -248,7 +248,7 @@ Anchor selection is critical — one anchor (A1) had a slow-decaying RSSI profil
 | Paper | File | Key Contribution |
 |---|---|---|
 | Koweerawong & Kaemarungsi, 2013 | `raw/Sci-Hub. Indoor localization improvement via adaptive RSS fingerprinting database.pdf` | ⚠️ SCANNED — adaptive database maintenance to handle RSS drift |
-| Aomumpai & Kaemarungsi, 2014 | `raw/Sci-Hub. Optimal placement of reference nodes for wireless indoor positioning systems : 2014 11th In.pdf` | ⚠️ SCANNED — optimal AP placement to maximise fingerprint discrimination |
+| Aomumpai & Kaemarungsi, 2014 | `raw/Optimal placement of reference nodes for wireless indoor positioning systems - 2014 11th In.pdf` | ⚠️ SCANNED — optimal AP placement to maximise fingerprint discrimination |
 
 ## Entity Summary
 

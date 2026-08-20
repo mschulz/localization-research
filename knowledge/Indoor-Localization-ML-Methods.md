@@ -8,13 +8,13 @@ source-files:
   - "raw/youssef.pdf"
   - "raw/A_Survey_of_Machine_Learning_for_Indoor_Positionin.pdf"
   - "raw/UWB_Indoor_Localization_Using_Deep_Learning_LSTM_N.pdf"
-  - "raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning .pdf | My Library |.pdf"
-  - "raw/PDF | My Library | Zotero.pdf"
-  - "raw/Sci-Hub. A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems : Jo.pdf"
+  - "raw/Alhomayani and Mahoor - 2021 - Oversampling Highly Imbalanced Indoor Positioning.pdf"
+  - "raw/PDF - My Library - Zotero.pdf"
+  - "raw/A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems - Jo.pdf"
   - "raw/Survey_of_Indoor_Localization_Based_on_Deep_Learni.pdf"
   - "raw/singh-machinelearningbased-2021.pdf"
-  - "raw/Sci-Hub. A survey of mathematical methods for indoor localization : 2009 IEEE International Symposiu.pdf"
-  - "raw/Sci-Hub. Bluetooth indoor localization with multiple neural networks : IEEE 5th International Sympos.pdf"
+  - "raw/A survey of mathematical methods for indoor localization - 2009 IEEE International Symposiu.pdf"
+  - "raw/Bluetooth indoor localization with multiple neural networks - IEEE 5th International Sympos.pdf"
   - "raw/v1_ CSI_based_Indoor_localization_using_Ensemble_Neural_Networks.pdf"
 status: active
 ---
@@ -420,7 +420,7 @@ Manual hyperparameter selection (number of layers, neurons per layer, activation
 
 ## Mathematical Methods Taxonomy for Indoor Localization (Seco et al., IEEE ISWCS 2009)
 
-Seco, F., Jiménez, A.R., Prieto, C., Roa, J., Koutsou, K. *A Survey of Mathematical Methods for Indoor Localization.* IEEE International Symposium on Intelligent Signal Processing (WISP), 2009. Instituto de Automática Industrial – CSIC, Madrid, Spain. Source: `raw/Sci-Hub. A survey of mathematical methods for indoor localization : 2009 IEEE International Symposiu.pdf`
+Seco, F., Jiménez, A.R., Prieto, C., Roa, J., Koutsou, K. *A Survey of Mathematical Methods for Indoor Localization.* IEEE International Symposium on Intelligent Signal Processing (WISP), 2009. Instituto de Automática Industrial – CSIC, Madrid, Spain. Source: `raw/A survey of mathematical methods for indoor localization - 2009 IEEE International Symposiu.pdf`
 
 A foundational taxonomy of the **mathematical techniques** underlying all indoor positioning algorithms — complementing surveys that focus on hardware/signal media by focusing on the computational methods used once measurements have been made. Specifically addresses radio-frequency-based local positioning systems (LPS).
 
@@ -443,7 +443,7 @@ A foundational taxonomy of the **mathematical techniques** underlying all indoor
 
 ## Bluetooth Indoor Localization with Multiple Neural Networks (Altini et al., IEEE ISSNIP 2010)
 
-Altini, M., Brunelli, D., Farella, E., Benini, L. *Bluetooth Indoor Localization with Multiple Neural Networks.* IEEE 5th International Symposium on Intelligent Signal Processing (ISSNIP), 2010. University of Bologna / University of Trento. Source: `raw/Sci-Hub. Bluetooth indoor localization with multiple neural networks : IEEE 5th International Sympos.pdf`
+Altini, M., Brunelli, D., Farella, E., Benini, L. *Bluetooth Indoor Localization with Multiple Neural Networks.* IEEE 5th International Symposium on Intelligent Signal Processing (ISSNIP), 2010. University of Bologna / University of Trento. Source: `raw/Bluetooth indoor localization with multiple neural networks - IEEE 5th International Sympos.pdf`
 
 A Bluetooth RSSI localization system that addresses the central problem of RSSI variability through a **per-orientation neural network** approach — recognising that user orientation (which way the device is held) is a primary source of RSSI inconsistency, and training separate neural networks for each orientation rather than treating orientation as noise.
 
@@ -467,7 +467,7 @@ A Bluetooth RSSI localization system that addresses the central problem of RSSI 
 
 ## ML Techniques Survey (Roy & Chowdhury, 2021)
 
-Roy, P. and Chowdhury, C. *A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems.* Journal of Intelligent and Robotic Systems, 2021. DOI: 10.1007/s10846-021-01327-z. Jadavpur University, India. Source: `raw/Sci-Hub. A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems : Jo.pdf`
+Roy, P. and Chowdhury, C. *A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems.* Journal of Intelligent and Robotic Systems, 2021. DOI: 10.1007/s10846-021-01327-z. Jadavpur University, India. Source: `raw/A Survey of Machine Learning Techniques for Indoor Localization and Navigation Systems - Jo.pdf`
 
 A comprehensive 2021 survey covering the application of ML to indoor localization across WiFi, Bluetooth, and other technologies. Covers:
 

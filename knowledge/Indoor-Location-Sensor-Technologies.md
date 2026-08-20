@@ -10,14 +10,14 @@ source-files:
   - "raw/077620951.pdf"
   - "raw/A_Survey_of_Indoor_Localization_Systems_and_Techno.pdf"
   - "raw/RFID Localisation.pdf"
-  - "raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the .pdf | My Library | Zotero.pdf"
-  - "raw/Almalioglu et al_2020_Milli-RIO.pdf | My Library | Zotero.pdf"
-  - "raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf | My Library | Zo.pdf"
+  - "raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf"
+  - "raw/Almalioglu et al_2020_Milli-RIO.pdf"
+  - "raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf"
   - "raw/sensors-20-01382-v2.pdf"
   - "raw/sensors-22-09380.pdf"
   - "raw/s11277-021-08209-5.pdf"
-  - "raw/Sci-Hub. An Indoor Localization Mechanism Using Active RFID Tag : IEEE International Conference on S.pdf"
-  - "raw/Sci-Hub. Design and Analysis of a Bluetooth-Based Indoor Localization System : Lecture Notes in Comp.pdf"
+  - "raw/An Indoor Localization Mechanism Using Active RFID Tag - IEEE International Conference on S.pdf"
+  - "raw/Design and Analysis of a Bluetooth-Based Indoor Localization System - Lecture Notes in Comp.pdf"
   - "raw/1-s2.0-S1389128625004943-main.pdf"
 status: active
 ---
@@ -148,7 +148,7 @@ The number, thickness, and material of obstacles determines the severity of NLOS
 
 #### BIPS — Bluetooth Indoor Positioning System (Bruno & Delmastro, WMAN 2003)
 
-Bruno, R. and Delmastro, F. *Design and Analysis of a Bluetooth-Based Indoor Localization System.* Lecture Notes in Computer Science, 2003. IIT Institute CNR, Pisa, Italy. Source: `raw/Sci-Hub. Design and Analysis of a Bluetooth-Based Indoor Localization System : Lecture Notes in Comp.pdf`
+Bruno, R. and Delmastro, F. *Design and Analysis of a Bluetooth-Based Indoor Localization System.* Lecture Notes in Computer Science, 2003. IIT Institute CNR, Pisa, Italy. Source: `raw/Design and Analysis of a Bluetooth-Based Indoor Localization System - Lecture Notes in Comp.pdf`
 
 An early (2003) Bluetooth indoor localization system that takes a distinctive design approach: rather than adding dedicated localization infrastructure, BIPS **integrates device discovery directly into the existing infrastructure-based Bluetooth AP network** that provides wireless connectivity.
 
@@ -218,7 +218,7 @@ A detailed survey of RFID localisation algorithms specifically targeting IoT sma
 
 #### Active RFID Enhancement — LANDMARC Accuracy Improvement (Jin et al., IEEE ICSNS 2006)
 
-Jin, G., Lu, X., Park, M.-S. *An Indoor Localization Mechanism Using Active RFID Tag.* IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC), 2006. Korea University, Seoul. Source: `raw/Sci-Hub. An Indoor Localization Mechanism Using Active RFID Tag : IEEE International Conference on S.pdf`
+Jin, G., Lu, X., Park, M.-S. *An Indoor Localization Mechanism Using Active RFID Tag.* IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing (SUTC), 2006. Korea University, Seoul. Source: `raw/An Indoor Localization Mechanism Using Active RFID Tag - IEEE International Conference on S.pdf`
 
 A study of the existing LANDMARC active RFID localization system followed by a proposed enhancement to address its accuracy limitations. LANDMARC is the foundational RFID localization approach (using reference tags to reduce reader count and improve accuracy via K-nearest-reference-tag matching); Jin et al. identify specific failure modes and propose algorithmic improvements.
 
@@ -261,7 +261,7 @@ Milli-RIO uses a **single 77–81 GHz FMCW mmWave radar chip** fused with a **lo
 
 **Significance for IPS**: Traditional mmWave FMCW radar required large antenna arrays; Milli-RIO demonstrates that a **single low-cost chip** suffices for ego-motion estimation when combined with a learned temporal model. This enables odometry-style localisation in challenging environments (smoke, darkness, featureless corridors) where vision fails.
 
-**Source**: `raw/Almalioglu et al_2020_Milli-RIO.pdf | My Library | Zotero.pdf`
+**Source**: `raw/Almalioglu et al_2020_Milli-RIO.pdf`
 
 ---
 
@@ -285,7 +285,7 @@ A system for tracking **construction workers in active construction sites** — 
 
 **Key challenge addressed**: Dynamic industrial environments invalidate static radio maps; the system adapts to geometry changes without full re-survey.
 
-**Source**: `raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf | My Library | Zo.pdf`
+**Source**: `raw/Papaioannou et al. - 2017 - Tracking People in Highly Dynamic Industrial Envir.pdf`
 
 ---
 
@@ -307,7 +307,7 @@ Xiao et al. provide a systematic taxonomy distinguishing two high-level localisa
 
 The survey (31 pages, ACM CSUR) provides extensive coverage of device-based methods. For device-free methods, see [[E-eyes-Device-Free-Localization]] (CSI-based, MobiCom 2014).
 
-**Source**: `raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the .pdf | My Library | Zotero.pdf`
+**Source**: `raw/Xiao et al. - 2016 - A Survey on Wireless Indoor Localization from the.pdf`
 
 ## Wearable / Contactless / Fusion Taxonomy (Roohi & Roshan Fekr, Computer Networks 2025)
 

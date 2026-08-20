@@ -5,12 +5,12 @@ updated: 2026-08-14
 source-files:
   - "raw/COMST16_IP.pdf"
   - "raw/1610.05424v1.pdf"
-  - "raw/Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf | My Library | Zotero.pdf"
-  - "raw/Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf | My Library | Zotero.pdf"
+  - "raw/Liu et al. - 2016 - Adaptive Sampling of RF Fingerprints for Fine-grai.pdf"
+  - "raw/Tan et al. - 2020 - An Efficient Fingerprint Database Construction App.pdf"
   - "raw/fast-construction-of-the-radio-map-based-on-the-improved-low-115csk6gui.pdf"
-  - "raw/Data Cleansing for Indoor Positioning Wi-Fi  Fingerprinting Dataset.pdf"
-  - "raw/Sci-Hub. A comparison of deterministic and probabilistic methods for indoor localization : Journal o.pdf"
-  - "raw/Sci-Hub. WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning : 201.pdf"
+  - "raw/Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Dataset.pdf"
+  - "raw/A comparison of deterministic and probabilistic methods for indoor localization - Journal o.pdf"
+  - "raw/WiDeep - WiFi-based Accurate and Robust Indoor Localization System using Deep Learning - 201.pdf"
   - "raw/Zero-Configuration, Robust Indoor Localization Theory and Experimentation.pdf"
   - "raw/601bbfbdb639558b07eb4aabffc00e184315.pdf"
   - "raw/Placement_optimization_positioning_nodes.pdf"
@@ -249,7 +249,7 @@ Key insight: a cleaner, smaller radio map outperforms a larger but noisy one, bo
 
 ## Algorithm Comparison: Deterministic vs. Probabilistic (Dawes & Chin, 2011)
 
-Dawes, B. and Chin, K.-W. *A comparison of deterministic and probabilistic methods for indoor localization.* The Journal of Systems and Software, 84(3):442–451, 2011. University of Wollongong. Source: `raw/Sci-Hub. A comparison of deterministic and probabilistic methods for indoor localization : Journal o.pdf`
+Dawes, B. and Chin, K.-W. *A comparison of deterministic and probabilistic methods for indoor localization.* The Journal of Systems and Software, 84(3):442–451, 2011. University of Wollongong. Source: `raw/A comparison of deterministic and probabilistic methods for indoor localization - Journal o.pdf`
 
 Prior work compared algorithms only within the same paradigm (deterministic vs. deterministic, or probabilistic vs. probabilistic). Dawes & Chin provide a **cross-paradigm comparison** on a common testbed, the first systematic study of this kind in WiFi RSSIF:
 
@@ -263,7 +263,7 @@ The paper directly tests both RADAR-style (deterministic KNN) and Horus-style (p
 
 ## Deep Learning for WiFi Fingerprinting: WiDeep (Abbas et al., PerCom 2019)
 
-Abbas, M., Elhamshary, M., Rizk, H., Torki, M., and Youssef, M. *WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning.* IEEE PerCom 2019. Alexandria University / EJUST. Source: `raw/Sci-Hub. WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning : 201.pdf`
+Abbas, M., Elhamshary, M., Rizk, H., Torki, M., and Youssef, M. *WiDeep: WiFi-based Accurate and Robust Indoor Localization System using Deep Learning.* IEEE PerCom 2019. Alexandria University / EJUST. Source: `raw/WiDeep - WiFi-based Accurate and Robust Indoor Localization System using Deep Learning - 201.pdf`
 
 WiDeep is a deep learning WiFi fingerprinting system from Moustafa Youssef's group (previously responsible for [[Horus-WLAN-System]]). It addresses two core limitations of classical fingerprinting:
 
@@ -374,7 +374,7 @@ A methodology for **optimal deployment of wireless positioning nodes** (access p
 
 **Key factors for optimisation success** (expected by authors): (a) accuracy of the indoor geometric and propagation model; (b) implementation of the objective function in the GA. The approach's evaluation was outside this paper's scope — it is a methodology proposal.
 
-**Relationship to Kaemarungsi research group**: Kaemarungsi's Source 59 (still scanned: `Sci-Hub. Optimal placement of reference nodes for wireless indoor positioning systems : 2014 11th In.pdf`) addresses the same AP placement problem from the fingerprinting analytical framework perspective. Xenakis 2019 provides a complementary computational optimisation approach that explicitly uses zone-level performance metrics and genetic algorithms.
+**Relationship to Kaemarungsi research group**: Kaemarungsi's Source 59 (still scanned: `Optimal placement of reference nodes for wireless indoor positioning systems - 2014 11th In.pdf`) addresses the same AP placement problem from the fingerprinting analytical framework perspective. Xenakis 2019 provides a complementary computational optimisation approach that explicitly uses zone-level performance metrics and genetic algorithms.
 
 ---
 

@@ -5,8 +5,8 @@ source-files:
   - "raw/infocom2000.pdf"
   - "raw/Kaemarungsi 2004.pdf"
   - "raw/p-0012--DESIGN_OF_INDOOR_POSITIONING_SYSTEMS.pdf"
-  - "raw/Sci-Hub. A Practical Approach to Landmark Deployment for Indoor Localization : 2006 3rd Annual IEEE .pdf"
-  - "raw/Sci-Hub. Evaluation of the reliability of RSSI for indoor localization : 2012 International Conferen.pdf"
+  - "raw/A Practical Approach to Landmark Deployment for Indoor Localization - 2006 3rd Annual IEEE.pdf"
+  - "raw/Evaluation of the reliability of RSSI for indoor localization - 2012 International Conferen.pdf"
 status: active
 ---
 
@@ -116,7 +116,7 @@ RADAR established the NNSS algorithm empirically. Kaemarungsi & Krishnamurthy pr
 
 ## AP / Landmark Placement Theory (Chen et al., IEEE SECON 2006)
 
-Chen, Y., Francisco, J.-A., Trappe, W., Martin, R.P. *A Practical Approach to Landmark Deployment for Indoor Localization.* 3rd Annual IEEE Communications Society Conference on Sensor and Ad Hoc Communications and Networks (SECON), 2006. Rutgers University. Source: `raw/Sci-Hub. A Practical Approach to Landmark Deployment for Indoor Localization : 2006 3rd Annual IEEE .pdf`; full 10-page paper verified at winlab.rutgers.edu.
+Chen, Y., Francisco, J.-A., Trappe, W., Martin, R.P. *A Practical Approach to Landmark Deployment for Indoor Localization.* 3rd Annual IEEE Communications Society Conference on Sensor and Ad Hoc Communications and Networks (SECON), 2006. Rutgers University. Source: `raw/A Practical Approach to Landmark Deployment for Indoor Localization - 2006 3rd Annual IEEE.pdf`; full 10-page paper verified at winlab.rutgers.edu.
 
 RADAR established that AP (landmark) placement affects localization performance — the original RADAR testbed used a collinear/coverage-optimised deployment that was not optimal for localization accuracy. Chen et al. provide the first theoretical framework for finding optimal AP deployments.
 
@@ -159,7 +159,7 @@ The same improvement holds for 802.15.4 ZigBee and for TOA-based ranging (~30% i
 
 ## RSSI Reliability for Mobile Indoor Localization (Dong & Dargie, ICWCUCA 2012)
 
-Dong, Q. and Dargie, W. *Evaluation of the Reliability of RSSI for Indoor Localization.* International Conference on Wireless Communications in Unusual and Confined Areas (ICWCUCA), 2012. Technical University of Dresden. Source: `raw/Sci-Hub. Evaluation of the reliability of RSSI for indoor localization : 2012 International Conferen.pdf`; full 6-page paper verified at rn.inf.tu-dresden.de.
+Dong, Q. and Dargie, W. *Evaluation of the Reliability of RSSI for Indoor Localization.* International Conference on Wireless Communications in Unusual and Confined Areas (ICWCUCA), 2012. Technical University of Dresden. Source: `raw/Evaluation of the reliability of RSSI for indoor localization - 2012 International Conferen.pdf`; full 6-page paper verified at rn.inf.tu-dresden.de.
 
 While RADAR treats RSSI fingerprinting as reliable when measured at known locations in static offline surveys, Dong & Dargie investigate whether RSSI can be used **during mobile node motion** for real-time localization in wireless sensor networks — finding it fundamentally unreliable.
 
