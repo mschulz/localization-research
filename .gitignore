@@ -8,3 +8,10 @@ raw/
 # macOS metadata
 .DS_Store
 **/.DS_Store
+
+# graphify's extraction cache. The graph data itself was deleted as outdated on 2026-08-20
+# (0659102); this directory survived that removal and was deleted on the same day's follow-up.
+# It is regenerable tool output, and it does not survive a move: stat-index.json keys entries
+# by absolute path, so 79 of its 109 entries already pointed at the in-vault raw/ paths that
+# the Dropbox relocation retired. Keep it out of git -- Stage 2/3 will move this folder.
+cache/
